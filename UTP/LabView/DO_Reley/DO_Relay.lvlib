@@ -9,10 +9,12 @@
 </Property>
 	<Item Name="Convert reley numbers to bool array.vi" Type="VI" URL="../Convert reley numbers to bool array.vi"/>
 	<Item Name="Deinitialize.vi" Type="VI" URL="../Deinitialize.vi"/>
-	<Item Name="Initialize.vi" Type="VI" URL="../Initialize.vi"/>
+	<Item Name="Initialize Input.vi" Type="VI" URL="../Initialize Input.vi"/>
+	<Item Name="Initialize Output.vi" Type="VI" URL="../Initialize Output.vi"/>
 	<Item Name="Read Multiple.vi" Type="VI" URL="../Read Multiple.vi"/>
 	<Item Name="Read Single.vi" Type="VI" URL="../Read Single.vi"/>
+	<Item Name="Set Output.vi" Type="VI" URL="../Set Output.vi"/>
+	<Item Name="Set Relays.vi" Type="VI" URL="../Set Relays.vi"/>
 	<Item Name="Set Releys Test.vi" Type="VI" URL="../Set Releys Test.vi"/>
-	<Item Name="Set Releys.vi" Type="VI" URL="../Set Releys.vi"/>
 	<Item Name="Single Write.vi" Type="VI" URL="../Single Write.vi"/>
 </Library>

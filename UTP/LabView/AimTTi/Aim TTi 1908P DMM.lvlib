@@ -11,6 +11,7 @@
 	<Item Name="Configure.ctl" Type="VI" URL="../Configure.ctl"/>
 	<Item Name="Configure.vi" Type="VI" URL="../Configure.vi"/>
 	<Item Name="Deinitialize.vi" Type="VI" URL="../Deinitialize.vi"/>
+	<Item Name="GetCurrentCofiguration.vi" Type="VI" URL="../GetCurrentCofiguration.vi"/>
 	<Item Name="Initialize.vi" Type="VI" URL="../Initialize.vi"/>
 	<Item Name="Read measurement.vi" Type="VI" URL="../Read measurement.vi"/>
 	<Item Name="Read.vi" Type="VI" URL="../Read.vi"/>
