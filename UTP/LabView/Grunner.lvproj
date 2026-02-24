@@ -29,7 +29,6 @@
 		</Item>
 		<Item Name="Rigol" Type="Folder">
 			<Item Name="Rigol.lvlib" Type="Library" URL="../Rigol/Rigol.lvlib"/>
-			<Item Name="Untitled 1.vi" Type="VI" URL="../../../Users/Gruner/Desktop/Untitled 1.vi"/>
 		</Item>
 		<Item Name="RS485" Type="Folder">
 			<Item Name="RS485.lvlib" Type="Library" URL="../RS485/RS485.lvlib"/>
@@ -52,8 +51,6 @@
 			<Item Name="Get Relay numbers 340-LEPL-103-A.vi" Type="VI" URL="../System/Get Relay numbers 340-LEPL-103-A.vi"/>
 			<Item Name="Get Programmimng File name and Family.vi" Type="VI" URL="../System/Get Programmimng File name and Family.vi"/>
 			<Item Name="Get Cassete codes.vi" Type="VI" URL="../System/Get Cassete codes.vi"/>
-			<Item Name="Read Encoders 1.vi" Type="VI" URL="../System/Read Encoders 1.vi"/>
-			<Item Name="Read Encoders 2.vi" Type="VI" URL="../System/Read Encoders 2.vi"/>
 			<Item Name="Read Encoders.vi" Type="VI" URL="../System/Read Encoders.vi"/>
 			<Item Name="Read cassete code.vi" Type="VI" URL="../System/Read cassete code.vi"/>
 			<Item Name="Monitor DI Port 1.vi" Type="VI" URL="../System/Monitor DI Port 1.vi"/>
@@ -361,6 +358,8 @@
 			<Item Name="DAQNavi_LV.dll" Type="Document" URL="DAQNavi_LV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Read Encoders 1.vi" Type="VI" URL="../System/Read Encoders 1.vi"/>
+			<Item Name="Read Encoders 2.vi" Type="VI" URL="../System/Read Encoders 2.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
