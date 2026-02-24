@@ -17269,7 +17269,7 @@ PostExpr = "StationGlobals.DMM_Data.CurrentlySetCofiguration = Enums.Measurement
 Id = "ID#:KQhKG4QR8RGLlcyCf698CA"
 
 [SF.Seq[7].Main[39]]
-ConditionExpr = "Locals.Variant == \"340-LEPL-102_A\""
+ConditionExpr = "Locals.Variant == \"340-LEPL-102-A\""
 
 [DEF, SF.Seq[7].Main[39]]
 %NAME = "Else If"
@@ -17505,7 +17505,7 @@ PostExpr = "StationGlobals.DMM_Data.CurrentlySetCofiguration = Enums.Measurement
 Id = "ID#:mI3DJ4QR8RGLlcyCf698CA"
 
 [SF.Seq[7].Main[42]]
-ConditionExpr = "Locals.Variant == \"340-LEPL-103_A\""
+ConditionExpr = "Locals.Variant == \"340-LEPL-103-A\""
 
 [DEF, SF.Seq[7].Main[42]]
 %NAME = "Else If"

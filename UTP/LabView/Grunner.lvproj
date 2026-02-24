@@ -56,6 +56,10 @@
 			<Item Name="Monitor DI Port 1.vi" Type="VI" URL="../System/Monitor DI Port 1.vi"/>
 			<Item Name="Read Config File.vi" Type="VI" URL="../System/Read Config File.vi"/>
 		</Item>
+		<Item Name="Testing" Type="Folder">
+			<Item Name="Save Serial Number.vi" Type="VI" URL="../Testing/Save Serial Number.vi"/>
+			<Item Name="Start Display Routine.vi" Type="VI" URL="../Testing/Start Display Routine.vi"/>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="RIGOL DP800 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/RIGOL DP800 Series/RIGOL DP800 Series.lvlib"/>
