@@ -1,0 +1,15 @@
+^XA
+
+^FX Top section with logo, name and address.
+^CF0,20,19
+^FO23,10^FD327-LEPL-104Ma^FS
+^CF0,20,20
+^FO15,30^FD24233^FS
+^CF0,20,22
+^FO15,50^FD200SWBT002A_102^FS
+^CF0,20,14
+^FO110,30^FDTS-A-V109^FS
+
+
+
+^XZ

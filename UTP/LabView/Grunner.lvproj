@@ -18,6 +18,7 @@
 			<Item Name="Aim TTi 1908P DMM.lvlib" Type="Library" URL="../AimTTi/Aim TTi 1908P DMM.lvlib"/>
 		</Item>
 		<Item Name="MPLAB" Type="Folder">
+			<Item Name="Erase Memory.vi" Type="VI" URL="../MPLAB/Erase Memory.vi"/>
 			<Item Name="Programming.vi" Type="VI" URL="../MPLAB/Programming.vi"/>
 			<Item Name="Programming1.vi" Type="VI" URL="../MPLAB/Programming1.vi"/>
 		</Item>
