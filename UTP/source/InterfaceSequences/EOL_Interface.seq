@@ -464,7 +464,7 @@ FailureAction = Num
 [SF.Seq[1]]
 %FLG: Parameters = 4456448
 %FLG: Locals = 4194304
-%HI: Main = [54]
+%HI: Main = [66]
 %FLG: Main = 4194304
 %HI: Setup = [0]
 %FLG: Setup = 4194304
@@ -493,6 +493,7 @@ ScanningOK = Bool
 IsTestSocketEnabled = Bool
 NumberOfTestSockets = Num
 DevicePassedTesting = Bool
+Erase1OK = Bool
 
 [DEF, SF.Seq[1].Locals.ResultList]
 %EPTYPE = TEResult
@@ -525,61 +526,61 @@ DevicePassedTesting = Bool
 %[12] = Step
 %TYPE: %[12] = "Action"
 %[13] = Step
-%TYPE: %[13] = "Statement"
+%TYPE: %[13] = "NI_Flow_If"
 %[14] = Step
-%TYPE: %[14] = "NI_Flow_If"
+%TYPE: %[14] = "Statement"
 %[15] = Step
-%TYPE: %[15] = "Action"
+%TYPE: %[15] = "NI_Flow_End"
 %[16] = Step
-%TYPE: %[16] = "NI_Flow_Else"
+%TYPE: %[16] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[17] = Step
-%TYPE: %[17] = "Statement"
+%TYPE: %[17] = "Action"
 %[18] = Step
-%TYPE: %[18] = "NI_Flow_End"
+%TYPE: %[18] = "Action"
 %[19] = Step
 %TYPE: %[19] = "Statement"
 %[20] = Step
-%TYPE: %[20] = "NoffzUTP_TEF_Model_Station_SetBatchTestSocketEnabled"
+%TYPE: %[20] = "NI_Flow_If"
 %[21] = Step
-%TYPE: %[21] = "NI_Flow_If"
+%TYPE: %[21] = "Action"
 %[22] = Step
-%TYPE: %[22] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
+%TYPE: %[22] = "NI_Flow_Else"
 %[23] = Step
 %TYPE: %[23] = "Statement"
 %[24] = Step
-%TYPE: %[24] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%TYPE: %[24] = "NI_Flow_End"
 %[25] = Step
-%TYPE: %[25] = "NI_Flow_ElseIf"
+%TYPE: %[25] = "Statement"
 %[26] = Step
-%TYPE: %[26] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
+%TYPE: %[26] = "NI_Flow_If"
 %[27] = Step
-%TYPE: %[27] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%TYPE: %[27] = "NoffzUTP_TEF_Model_Station_SetBatchTestSocketEnabled"
 %[28] = Step
-%TYPE: %[28] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
+%TYPE: %[28] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
 %[29] = Step
-%TYPE: %[29] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
+%TYPE: %[29] = "Statement"
 %[30] = Step
-%TYPE: %[30] = "NI_Flow_ElseIf"
+%TYPE: %[30] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[31] = Step
-%TYPE: %[31] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
+%TYPE: %[31] = "NoffzUTP_TEF_UI_TestSocket_SetCaption"
 %[32] = Step
 %TYPE: %[32] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[33] = Step
-%TYPE: %[33] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
+%TYPE: %[33] = "NI_Flow_ElseIf"
 %[34] = Step
-%TYPE: %[34] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
+%TYPE: %[34] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
 %[35] = Step
-%TYPE: %[35] = "NI_Flow_ElseIf"
+%TYPE: %[35] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[36] = Step
-%TYPE: %[36] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%TYPE: %[36] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
 %[37] = Step
-%TYPE: %[37] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
+%TYPE: %[37] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
 %[38] = Step
-%TYPE: %[38] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
+%TYPE: %[38] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[39] = Step
-%TYPE: %[39] = "NI_Flow_Else"
+%TYPE: %[39] = "NI_Flow_ElseIf"
 %[40] = Step
-%TYPE: %[40] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%TYPE: %[40] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
 %[41] = Step
 %TYPE: %[41] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[42] = Step
@@ -587,27 +588,51 @@ DevicePassedTesting = Bool
 %[43] = Step
 %TYPE: %[43] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
 %[44] = Step
-%TYPE: %[44] = "NI_Flow_End"
+%TYPE: %[44] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[45] = Step
-%TYPE: %[45] = "NoffzUTP_TEF_UI_TestSocket_SetCaption"
+%TYPE: %[45] = "NI_Flow_ElseIf"
 %[46] = Step
-%TYPE: %[46] = "NoffzUTP_TEF_UI_TestSocket_TestStatus_SetValue"
+%TYPE: %[46] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
 %[47] = Step
-%TYPE: %[47] = "NoffzUTP_TEF_UI_TestSocket_StepList_Clear"
+%TYPE: %[47] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[48] = Step
 %TYPE: %[48] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
 %[49] = Step
-%TYPE: %[49] = "Label"
+%TYPE: %[49] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
 %[50] = Step
-%TYPE: %[50] = "Label"
+%TYPE: %[50] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[51] = Step
-%TYPE: %[51] = "Label"
+%TYPE: %[51] = "NI_Flow_Else"
 %[52] = Step
 %TYPE: %[52] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[53] = Step
-%TYPE: %[53] = "Label"
+%TYPE: %[53] = "NoffzUTP_TEF_Model_TestSocket_SetSerialNumber"
 %[54] = Step
-%TYPE: %[54] = "NoffzUTP_TEF_UI_Station_ShowMessage"
+%TYPE: %[54] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%[55] = Step
+%TYPE: %[55] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
+%[56] = Step
+%TYPE: %[56] = "NoffzUTP_TEF_Model_TestSocket_SkipProductSequence"
+%[57] = Step
+%TYPE: %[57] = "NI_Flow_End"
+%[58] = Step
+%TYPE: %[58] = "NoffzUTP_TEF_UI_TestSocket_SetCaption"
+%[59] = Step
+%TYPE: %[59] = "NoffzUTP_TEF_UI_TestSocket_TestStatus_SetValue"
+%[60] = Step
+%TYPE: %[60] = "NoffzUTP_TEF_UI_TestSocket_StepList_Clear"
+%[61] = Step
+%TYPE: %[61] = "NoffzUTP_TEF_UI_TestSocket_SetIcon"
+%[62] = Step
+%TYPE: %[62] = "Label"
+%[63] = Step
+%TYPE: %[63] = "Label"
+%[64] = Step
+%TYPE: %[64] = "Label"
+%[65] = Step
+%TYPE: %[65] = "Label"
+%[66] = Step
+%TYPE: %[66] = "NoffzUTP_TEF_UI_Station_ShowMessage"
 
 [SF.Seq[1].Main[0].TS]
 Id = "ID#:4bbXak4A8RG5h1B7nf4f8B"
@@ -790,9 +815,9 @@ StatusExpr = "\"\""
 
 [SF.Seq[1].Main]
 %FLG: %[5] = 67108864
-%FLG: %[50] = 67108864
-%FLG: %[51] = 67108864
-%FLG: %[53] = 67108864
+%FLG: %[63] = 67108864
+%FLG: %[64] = 67108864
+%FLG: %[65] = 67108864
 
 [SF.Seq[1].Main[6].TS]
 Id = "ID#:xLbXak4A8RG5h1B7nf4f8B"
@@ -1122,7 +1147,6 @@ DisplayType = "ASCII String"
 [SF.Seq[1].Main[12].TS]
 Id = "ID#:ybbXak4A8RG5h1B7nf4f8B"
 PreCond = "Locals.DUTPresent"
-Mode = "Skip"
 LoopType = "PassFailCount"
 LoopWhile = "RunState.LoopIndex < 3 && RunState.LoopNumPassed < 1"
 LoopStatus = "RunState.LoopNumPassed >= 1 ? \"Passed\" : \"Failed\""
@@ -1358,36 +1382,123 @@ DisplayType = "ASCII String"
 %NAME = "Scan serial number of DUT"
 
 [SF.Seq[1].Main[13].TS]
-Id = "ID#:ANSj1JUR8RGLlcyCf698CA"
-PostExpr = "Locals.SerialNumber = Locals.TestSocketName,\nLocals.ScanningOK = True"
-
-[DEF, SF.Seq[1].Main[13]]
-%NAME = "Statement"
-
-[SF.Seq[1].Main[14].TS]
-Id = "ID#:uk6xbgwP8RGLjsyCf698CA"
-
-[SF.Seq[1].Main[14]]
-ConditionExpr = "StationGlobals.LogToDatabase "
-
-[DEF, SF.Seq[1].Main[14]]
-%NAME = "If"
-
-[SF.Seq[1].Main[15].TS]
-Id = "ID#:yrbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:/rmakyUS8RGLlsyCf698CA"
 Mode = "Skip"
 
-[DEF, SF.Seq[1].Main[15].TS]
+[SF.Seq[1].Main[13]]
+ConditionExpr = "!Locals.ScanningOK && Locals.DUTPresent"
+%COMMENT = "TEMPORRARYY"
+
+[DEF, SF.Seq[1].Main[13]]
+%NAME = "If"
+
+[SF.Seq[1].Main[14].TS]
+Id = "ID#:ANSj1JUR8RGLlcyCf698CA"
+Mode = "Skip"
+PostExpr = "Locals.SerialNumber = Locals.TestSocketName,\nLocals.ScanningOK = True"
+
+[SF.Seq[1].Main[14]]
+%COMMENT = "TEMPORRARYY"
+
+[DEF, SF.Seq[1].Main[14]]
+%NAME = "Statement"
+
+[SF.Seq[1].Main[15].TS]
+Id = "ID#:ALqakyUS8RGLlsyCf698CA"
+Mode = "Skip"
+
+[SF.Seq[1].Main[15]]
+%COMMENT = "TEMPORRARYY"
+
+[DEF, SF.Seq[1].Main[15]]
+%NAME = "End"
+
+[SF.Seq[1].Main[16].TS]
+Id = "ID#:41q+NgQT8RGLnMyCf698CA"
+PreCond = "StationGlobals.FirstTest[RunState.TestSockets.MyIndex]"
+Mode = "Skip"
+
+[DEF, SF.Seq[1].Main[16].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[16].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.ShowMessage"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[16].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[16].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[16].TS.SData.ActualArgs.TestSocket]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[16].TS.SData.ActualArgs.Message]
+UseDef = False
+Expr = "\"Preparing station for testing\""
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[16].TS.SData.ActualArgs.Color]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[16].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[16].TS.SData.Prototype]
+TestSocket = Num
+Message = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[16].TS.SData.Prototype]
+TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[16].TS.SData.Prototype.TestSocket]
+%COMMENT = "Test Socket number. (Default: Current Test Socket Index)"
+
+[SF.Seq[1].Main[16].TS.SData.Prototype.Message]
+%COMMENT = "Message to show."
+
+[SF.Seq[1].Main[16].TS.SData.Prototype.Color]
+%COMMENT = "Background color of the Test Socket Message Area. (Default: StationGlobals.TEF.Colors.DialogInfo)"
+%NUMFMT = "%#x"
+
+[SF.Seq[1].Main[16].TS.SData.Prototype.FontSize]
+%COMMENT = "Size of the Font. (Default: Configuration parameter 'DialogTextBox' from Noffz.UTP.TEF.config)"
+
+[DEF, SF.Seq[1].Main[16]]
+%NAME = "Preparing station for testing"
+
+[SF.Seq[1].Main[17].TS]
+Id = "ID#:k5zQTAMT8RGLnMyCf698CA"
+PreCond = "StationGlobals.FirstTest[RunState.TestSockets.MyIndex]"
+Mode = "Skip"
+
+[DEF, SF.Seq[1].Main[17].TS]
 SData = "TYPE, FlexGStepAdditions"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall]
-ProjectPath = "Grunner.lvproj"
-VIPath = "My Computer\\Database\\SQL Database.lvlib\\Check if serial numebr is in Database.vi"
-Namespace = "SQL Database.lvlib"
-TDChecksum = 2142249939
+[SF.Seq[1].Main[17].TS.SData.ViCall]
+VIPath = "C:\\UTP\\LabView\\MPLAB\\Select Tool.vi"
+TDChecksum = -1465786258
 %HI: Parms = [8]
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms]
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms]
 %[0] = "TYPE, VIParameter"
 %[1] = "TYPE, VIParameter"
 %[2] = "TYPE, VIParameter"
@@ -1398,55 +1509,65 @@ TDChecksum = 2142249939
 %[7] = "TYPE, VIParameter"
 %[8] = "TYPE, VIParameter"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[0]]
-Label = "connection reference"
-ArgVal = "StationGlobals.References.Database"
-Type = 4
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[0]]
+Label = "DUT1?"
+ArgVal = "Locals.TestSocketName == \"DUT1\""
+Type = 2
 WireRequirement = 1
-ReferenceType = 3
-DisplayType = "Number (U32)"
-ConnectorNumber = 0
-
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[0]]
-%NAME = "connection reference"
-
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[1]]
-Label = "table"
-ArgVal = "Locals.Variant"
-Type = 1
-WireRequirement = 1
-DisplayType = "ASCII String"
-ConnectorNumber = 5
-
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[1]]
-%NAME = "table"
-
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[2]]
-Label = "Serial Number"
-ArgVal = "Locals.SerialNumber"
-Type = 1
-WireRequirement = 1
-DisplayType = "ASCII String"
+DisplayType = "Boolean"
 ConnectorNumber = 7
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[2]]
-%NAME = "Serial Number"
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[0]]
+%NAME = "DUT1?"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3]]
-Label = "error in (no error)"
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[1]]
+Label = "6.25"
+ArgVal = "True"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+ConnectorNumber = 11
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[1]]
+%NAME = "6.25"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[2]]
+Label = "Family"
+ArgVal = "StationGlobals.Programmimg.Family"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+ConnectorNumber = 10
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[2]]
+%NAME = "Family"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[3]]
+Label = "Supply PCB over Programator"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+ConnectorNumber = 9
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[3]]
+%NAME = "Supply PCB over Programator"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4]]
+Label = "error in"
 Type = 3
 WireRequirement = 1
 DisplayType = "Container"
 UseDefaultValues = True
 %HI: ArrayClusterEls = [2]
-ConnectorNumber = 11
+ConnectorNumber = 8
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls]
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls]
 %[0] = "TYPE, VIParameterElement"
 %[1] = "TYPE, VIParameterElement"
 %[2] = "TYPE, VIParameterElement"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
 Label = "status"
 ArgVal = "False"
 Type = 2
@@ -1454,10 +1575,10 @@ WireRequirement = 1
 DisplayType = "Boolean"
 UseDefaultValues = True
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
 %NAME = "status"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
 Label = "code"
 ArgVal = "0"
 Type = 0
@@ -1466,10 +1587,10 @@ NumType = 4
 DisplayType = "Number (I32)"
 UseDefaultValues = True
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
 %NAME = "code"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
 Label = "source"
 ArgVal = "\"\""
 Type = 1
@@ -1477,13 +1598,434 @@ WireRequirement = 1
 DisplayType = "ASCII String"
 UseDefaultValues = True
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
 %NAME = "source"
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[3]]
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[4]]
+%NAME = "error in"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[5]]
+Label = "standard output"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+Direction = 1
+ConnectorNumber = 3
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[5]]
+%NAME = "standard output"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[6]]
+Label = "standard error"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+Direction = 1
+ConnectorNumber = 2
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[6]]
+%NAME = "standard error"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[7]]
+Label = "Firmware passed"
+ArgVal = "Locals.Erase1OK"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+Direction = 1
+ConnectorNumber = 1
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[7]]
+%NAME = "Firmware passed"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8]]
+Label = "error out"
+ArgVal = "Step.Result.Error"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+%HI: ArrayClusterEls = [2]
+Direction = 1
+ConnectorNumber = 0
+LegacyClusterType = 2
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "Step.Result.Error.Occurred"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "Step.Result.Error.Code"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "Step.Result.Error.Msg"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[1].Main[17].TS.SData.ViCall.Parms[8]]
+%NAME = "error out"
+
+[DEF, SF.Seq[1].Main[17]]
+%NAME = "Select tool for first device"
+
+[SF.Seq[1].Main[18].TS]
+Id = "ID#:a+NyBAoT8RGLnMyCf698CA"
+PreCond = "StationGlobals.FirstTest[RunState.TestSockets.MyIndex]"
+Mode = "Skip"
+
+[DEF, SF.Seq[1].Main[18].TS]
+SData = "TYPE, FlexGStepAdditions"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall]
+VIPath = "C:\\UTP\\LabView\\MPLAB\\Select Tool.vi"
+TDChecksum = -1465786258
+%HI: Parms = [8]
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms]
+%[0] = "TYPE, VIParameter"
+%[1] = "TYPE, VIParameter"
+%[2] = "TYPE, VIParameter"
+%[3] = "TYPE, VIParameter"
+%[4] = "TYPE, VIParameter"
+%[5] = "TYPE, VIParameter"
+%[6] = "TYPE, VIParameter"
+%[7] = "TYPE, VIParameter"
+%[8] = "TYPE, VIParameter"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[0]]
+Label = "DUT1?"
+ArgVal = "Locals.TestSocketName == \"DUT1\""
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+ConnectorNumber = 7
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[0]]
+%NAME = "DUT1?"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[1]]
+Label = "6.25"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+ConnectorNumber = 11
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[1]]
+%NAME = "6.25"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[2]]
+Label = "Family"
+ArgVal = "StationGlobals.Programmimg.Family"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+ConnectorNumber = 10
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[2]]
+%NAME = "Family"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[3]]
+Label = "Supply PCB over Programator"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+ConnectorNumber = 9
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[3]]
+%NAME = "Supply PCB over Programator"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4]]
+Label = "error in"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+UseDefaultValues = True
+%HI: ArrayClusterEls = [2]
+ConnectorNumber = 8
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+UseDefaultValues = True
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "0"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+UseDefaultValues = True
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "\"\""
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[4]]
+%NAME = "error in"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[5]]
+Label = "standard output"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+Direction = 1
+ConnectorNumber = 3
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[5]]
+%NAME = "standard output"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[6]]
+Label = "standard error"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+Direction = 1
+ConnectorNumber = 2
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[6]]
+%NAME = "standard error"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[7]]
+Label = "Firmware passed"
+ArgVal = "Locals.Erase1OK"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+Direction = 1
+ConnectorNumber = 1
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[7]]
+%NAME = "Firmware passed"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8]]
+Label = "error out"
+ArgVal = "Step.Result.Error"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+%HI: ArrayClusterEls = [2]
+Direction = 1
+ConnectorNumber = 0
+LegacyClusterType = 2
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "Step.Result.Error.Occurred"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "Step.Result.Error.Code"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "Step.Result.Error.Msg"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[1].Main[18].TS.SData.ViCall.Parms[8]]
+%NAME = "error out"
+
+[DEF, SF.Seq[1].Main[18]]
+%NAME = "Select tool for first device"
+
+[SF.Seq[1].Main[19].TS]
+Id = "ID#:3289cAQT8RGLnMyCf698CA"
+PreCond = "StationGlobals.FirstTest[RunState.TestSockets.MyIndex]"
+Mode = "Skip"
+PostExpr = "StationGlobals.FirstTest[RunState.TestSockets.MyIndex] = False"
+
+[DEF, SF.Seq[1].Main[19]]
+%NAME = "Set first test variable"
+
+[SF.Seq[1].Main[20].TS]
+Id = "ID#:uk6xbgwP8RGLjsyCf698CA"
+
+[SF.Seq[1].Main[20]]
+ConditionExpr = "StationGlobals.LogToDatabase "
+
+[DEF, SF.Seq[1].Main[20]]
+%NAME = "If"
+
+[SF.Seq[1].Main[21].TS]
+Id = "ID#:yrbXak4A8RG5h1B7nf4f8B"
+Mode = "Skip"
+
+[DEF, SF.Seq[1].Main[21].TS]
+SData = "TYPE, FlexGStepAdditions"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall]
+ProjectPath = "Grunner.lvproj"
+VIPath = "My Computer\\Database\\SQL Database.lvlib\\Check if serial numebr is in Database.vi"
+Namespace = "SQL Database.lvlib"
+TDChecksum = 2142249939
+%HI: Parms = [8]
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms]
+%[0] = "TYPE, VIParameter"
+%[1] = "TYPE, VIParameter"
+%[2] = "TYPE, VIParameter"
+%[3] = "TYPE, VIParameter"
+%[4] = "TYPE, VIParameter"
+%[5] = "TYPE, VIParameter"
+%[6] = "TYPE, VIParameter"
+%[7] = "TYPE, VIParameter"
+%[8] = "TYPE, VIParameter"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[0]]
+Label = "connection reference"
+ArgVal = "StationGlobals.References.Database"
+Type = 4
+WireRequirement = 1
+ReferenceType = 3
+DisplayType = "Number (U32)"
+ConnectorNumber = 0
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[0]]
+%NAME = "connection reference"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[1]]
+Label = "table"
+ArgVal = "Locals.Variant"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+ConnectorNumber = 5
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[1]]
+%NAME = "table"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[2]]
+Label = "Serial Number"
+ArgVal = "Locals.SerialNumber"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+ConnectorNumber = 7
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[2]]
+%NAME = "Serial Number"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3]]
+Label = "error in (no error)"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+UseDefaultValues = True
+%HI: ArrayClusterEls = [2]
+ConnectorNumber = 11
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+UseDefaultValues = True
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "0"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+UseDefaultValues = True
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "\"\""
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[3]]
 %NAME = "error in (no error)"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[4]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[4]]
 Label = "connection reference out"
 Type = 4
 WireRequirement = 1
@@ -1492,10 +2034,10 @@ DisplayType = "Number (U32)"
 Direction = 1
 ConnectorNumber = 4
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[4]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[4]]
 %NAME = "connection reference out"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[5]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[5]]
 Label = "NumberOfTests"
 ArgVal = "FileGlobals.NumberOfTests[RunState.TestSockets.MyIndex] // already finished number"
 Type = 1
@@ -1504,10 +2046,10 @@ DisplayType = "ASCII String"
 Direction = 1
 ConnectorNumber = 6
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[5]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[5]]
 %NAME = "NumberOfTests"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[6]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[6]]
 Label = "Can test"
 ArgVal = "Locals.CanTestDevice"
 Type = 2
@@ -1516,10 +2058,10 @@ DisplayType = "Boolean"
 Direction = 1
 ConnectorNumber = 8
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[6]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[6]]
 %NAME = "Can test"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[7]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[7]]
 Label = "Device Passed Previous testing"
 ArgVal = "Locals.DevicePassedTesting"
 Type = 2
@@ -1528,10 +2070,10 @@ DisplayType = "Boolean"
 Direction = 1
 ConnectorNumber = 10
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[7]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[7]]
 %NAME = "Device Passed Previous testing"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8]]
 Label = "error out"
 ArgVal = "Step.Result.Error"
 Type = 3
@@ -1542,22 +2084,22 @@ Direction = 1
 ConnectorNumber = 15
 LegacyClusterType = 2
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls]
 %[0] = "TYPE, VIParameterElement"
 %[1] = "TYPE, VIParameterElement"
 %[2] = "TYPE, VIParameterElement"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
 Label = "status"
 ArgVal = "Step.Result.Error.Occurred"
 Type = 2
 WireRequirement = 1
 DisplayType = "Boolean"
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls[0]]
 %NAME = "status"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
 Label = "code"
 ArgVal = "Step.Result.Error.Code"
 Type = 0
@@ -1565,280 +2107,70 @@ WireRequirement = 1
 NumType = 4
 DisplayType = "Number (I32)"
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls[1]]
 %NAME = "code"
 
-[SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
+[SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
 Label = "source"
 ArgVal = "Step.Result.Error.Msg"
 Type = 1
 WireRequirement = 1
 DisplayType = "ASCII String"
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8].ArrayClusterEls[2]]
 %NAME = "source"
 
-[DEF, SF.Seq[1].Main[15].TS.SData.ViCall.Parms[8]]
+[DEF, SF.Seq[1].Main[21].TS.SData.ViCall.Parms[8]]
 %NAME = "error out"
 
-[DEF, SF.Seq[1].Main[15]]
+[DEF, SF.Seq[1].Main[21]]
 %NAME = "Check if element is in database"
 
-[SF.Seq[1].Main[16].TS]
+[SF.Seq[1].Main[22].TS]
 Id = "ID#:vU6xbgwP8RGLjsyCf698CA"
 
-[DEF, SF.Seq[1].Main[16]]
+[DEF, SF.Seq[1].Main[22]]
 %NAME = "Else"
 
-[SF.Seq[1].Main[17].TS]
+[SF.Seq[1].Main[23].TS]
 Id = "ID#:/B5FEg0P8RGLjsyCf698CA"
 PostExpr = " Locals.CanTestDevice = True"
 
-[DEF, SF.Seq[1].Main[17]]
+[DEF, SF.Seq[1].Main[23]]
 %NAME = "Set database parameter"
 
-[SF.Seq[1].Main[18].TS]
+[SF.Seq[1].Main[24].TS]
 Id = "ID#:vE6xbgwP8RGLjsyCf698CA"
 
-[DEF, SF.Seq[1].Main[18]]
+[DEF, SF.Seq[1].Main[24]]
 %NAME = "End"
 
-[SF.Seq[1].Main[19].TS]
+[SF.Seq[1].Main[25].TS]
 Id = "ID#:y7bXak4A8RG5h1B7nf4f8B"
 PostExpr Line0001 = "Locals.IsTestSocketEnabled = Locals.DUTPresent && Locals.CanTestDevice && Locals.ScanningOK//(Locals.DUTPresent && //not"
 PostExpr Line0002 = " error for serial numebr)"
 
-[DEF, SF.Seq[1].Main[19]]
+[DEF, SF.Seq[1].Main[25]]
 %NAME = "Set test socket enabled"
 
-[SF.Seq[1].Main[20].TS]
-Id = "ID#:zLbXak4A8RG5h1B7nf4f8B"
-
-[DEF, SF.Seq[1].Main[20].TS]
-SData = "TYPE, SeqCallStepAdditions"
-
-[SF.Seq[1].Main[20].TS.SData]
-SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "Model.Station.SetBatchTestSocketEnabled"
-CustomThreadAffinity = "-1"
-Trace = "Off"
-
-[DEF, SF.Seq[1].Main[20].TS.SData]
-ActualArgs = Arguments
-Prototype = Obj
-
-[DEF, SF.Seq[1].Main[20].TS.SData.ActualArgs]
-TestSocket = "TYPE, SequenceArgument"
-Enabled = "TYPE, SequenceArgument"
-
-[SF.Seq[1].Main[20].TS.SData.ActualArgs.TestSocket]
-UseDef = False
-Expr = "Locals.TestSocket"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[20].TS.SData.ActualArgs.Enabled]
-UseDef = False
-Expr = "Locals.IsTestSocketEnabled"
-ParamType = 16
-Flags = 0
-
-[DEF, SF.Seq[1].Main[20].TS.SData.Prototype]
-TestSocket = Num
-Enabled = Bool
-
-[SF.Seq[1].Main[20].TS.SData.Prototype]
-TestSocket = Nan
-Enabled = True
-
-[DEF, SF.Seq[1].Main[20]]
-%NAME = "Model.Station.SetBatchTestSocketEnabled"
-
-[SF.Seq[1].Main[21].TS]
+[SF.Seq[1].Main[26].TS]
 Id = "ID#:zbbXak4A8RG5h1B7nf4f8B"
 
-[SF.Seq[1].Main[21]]
+[SF.Seq[1].Main[26]]
 ConditionExpr = "Locals.IsTestSocketEnabled"
 
-[DEF, SF.Seq[1].Main[21]]
+[DEF, SF.Seq[1].Main[26]]
 %NAME = "If"
 
-[SF.Seq[1].Main[22].TS]
-Id = "ID#:zrbXak4A8RG5h1B7nf4f8B"
-
-[DEF, SF.Seq[1].Main[22].TS]
-SData = "TYPE, SeqCallStepAdditions"
-
-[SF.Seq[1].Main[22].TS.SData]
-SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "Model.TestSocket.SetSerialNumber"
-CustomThreadAffinity = "-1"
-Trace = "Off"
-
-[DEF, SF.Seq[1].Main[22].TS.SData]
-ActualArgs = Arguments
-Prototype = Obj
-
-[DEF, SF.Seq[1].Main[22].TS.SData.ActualArgs]
-TestSocket = "TYPE, SequenceArgument"
-SerialNumber = "TYPE, SequenceArgument"
-
-[SF.Seq[1].Main[22].TS.SData.ActualArgs.TestSocket]
-UseDef = False
-Expr = "Locals.TestSocket"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[22].TS.SData.ActualArgs.SerialNumber]
-UseDef = False
-Expr = "Locals.SerialNumber"
-ParamType = 2
-Flags = 0
-
-[DEF, SF.Seq[1].Main[22].TS.SData.Prototype]
-TestSocket = Num
-SerialNumber = Str
-
-[SF.Seq[1].Main[22].TS.SData.Prototype]
-TestSocket = Nan
-
-[DEF, SF.Seq[1].Main[22]]
-%NAME = "Model.TestSocket.SetSerialNumber"
-
-[SF.Seq[1].Main[23].TS]
-Id = "ID#:Pat7fBMP8RGLjsyCf698CA"
-PostExpr = "FileGlobals.DeviceTested[RunState.TestSockets.MyIndex] = True"
-
-[DEF, SF.Seq[1].Main[23]]
-%NAME = "Set that device is tested"
-
-[SF.Seq[1].Main[24].TS]
-Id = "ID#:z7bXak4A8RG5h1B7nf4f8B"
-
-[DEF, SF.Seq[1].Main[24].TS]
-SData = "TYPE, SeqCallStepAdditions"
-
-[SF.Seq[1].Main[24].TS.SData]
-SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.ShowMessage"
-CustomThreadAffinity = "-1"
-Trace = "Off"
-
-[DEF, SF.Seq[1].Main[24].TS.SData]
-ActualArgs = Arguments
-Prototype = Obj
-
-[DEF, SF.Seq[1].Main[24].TS.SData.ActualArgs]
-TestSocket = "TYPE, SequenceArgument"
-Message = "TYPE, SequenceArgument"
-Color = "TYPE, SequenceArgument"
-FontSize = "TYPE, SequenceArgument"
-
-[SF.Seq[1].Main[24].TS.SData.ActualArgs.TestSocket]
-UseDef = False
-Expr = "Locals.TestSocket"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[24].TS.SData.ActualArgs.Message]
-UseDef = False
-Expr = "ResStr(\"UI_MESSAGES\", \"WAITING_FOR_START\")"
-ParamType = 2
-Flags = 0
-
-[SF.Seq[1].Main[24].TS.SData.ActualArgs.Color]
-UseDef = False
-Expr = "StationGlobals.TEF.Colors.DialogWaiting"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[24].TS.SData.ActualArgs.FontSize]
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[DEF, SF.Seq[1].Main[24].TS.SData.Prototype]
-TestSocket = Num
-Message = Str
-Color = Num
-FontSize = Num
-
-[SF.Seq[1].Main[24].TS.SData.Prototype]
-TestSocket = Nan
-Color = Nan
-FontSize = Nan
-
-[SF.Seq[1].Main[24].TS.SData.Prototype.Color]
-%NUMFMT = "%#x"
-
-[DEF, SF.Seq[1].Main[24]]
-%NAME = "UI.TestSocket.ShowMessage: \"Waiting for start\""
-
-[SF.Seq[1].Main[25].TS]
-Id = "ID#:+6hZ/KgM8RGLhMyCf698CA"
-
-[SF.Seq[1].Main[25]]
-ConditionExpr = "!Locals.ScanningOK"
-
-[DEF, SF.Seq[1].Main[25]]
-%NAME = "Else If"
-
-[SF.Seq[1].Main[26].TS]
-Id = "ID#:fV/T4aUQ8RGLksyCf698CA"
-
-[DEF, SF.Seq[1].Main[26].TS]
-SData = "TYPE, SeqCallStepAdditions"
-
-[SF.Seq[1].Main[26].TS.SData]
-SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "Model.TestSocket.SetSerialNumber"
-CustomThreadAffinity = "-1"
-Trace = "Off"
-
-[DEF, SF.Seq[1].Main[26].TS.SData]
-ActualArgs = Arguments
-Prototype = Obj
-
-[DEF, SF.Seq[1].Main[26].TS.SData.ActualArgs]
-TestSocket = "TYPE, SequenceArgument"
-SerialNumber = "TYPE, SequenceArgument"
-
-[SF.Seq[1].Main[26].TS.SData.ActualArgs.TestSocket]
-UseDef = False
-Expr = "Locals.TestSocket"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[26].TS.SData.ActualArgs.SerialNumber]
-UseDef = False
-Expr = "\"1111\""
-ParamType = 2
-Flags = 0
-
-[DEF, SF.Seq[1].Main[26].TS.SData.Prototype]
-TestSocket = Num
-SerialNumber = Str
-
-[SF.Seq[1].Main[26].TS.SData.Prototype]
-TestSocket = Nan
-
-[DEF, SF.Seq[1].Main[26]]
-%NAME = "Model.TestSocket.SetSerialNumber"
-
 [SF.Seq[1].Main[27].TS]
-Id = "ID#:NZT8A6kM8RGLhMyCf698CA"
+Id = "ID#:zLbXak4A8RG5h1B7nf4f8B"
 
 [DEF, SF.Seq[1].Main[27].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[27].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.ShowMessage"
+SeqName = "Model.Station.SetBatchTestSocketEnabled"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -1848,9 +2180,7 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[27].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-Message = "TYPE, SequenceArgument"
-Color = "TYPE, SequenceArgument"
-FontSize = "TYPE, SequenceArgument"
+Enabled = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[27].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -1859,50 +2189,35 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[27].TS.SData.ActualArgs.Message]
+[SF.Seq[1].Main[27].TS.SData.ActualArgs.Enabled]
 UseDef = False
-Expr = "ResStr(\"UI_CONTROL\", \"CODE_READ_FAILED\")"
-ParamType = 2
-Flags = 0
-
-[SF.Seq[1].Main[27].TS.SData.ActualArgs.Color]
-UseDef = False
-Expr = "StationGlobals.TEF.Colors.Window"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[27].TS.SData.ActualArgs.FontSize]
-ParamType = 4
-ParamRepresentation = 1
+Expr = "Locals.IsTestSocketEnabled"
+ParamType = 16
 Flags = 0
 
 [DEF, SF.Seq[1].Main[27].TS.SData.Prototype]
 TestSocket = Num
-Message = Str
-Color = Num
-FontSize = Num
+Enabled = Bool
 
 [SF.Seq[1].Main[27].TS.SData.Prototype]
 TestSocket = Nan
-Color = Nan
-FontSize = Nan
+Enabled = True
 
-[SF.Seq[1].Main[27].TS.SData.Prototype.Color]
-%NUMFMT = "%#x"
+[SF.Seq[1].Main[27]]
+%COMMENT = "ONLY IF SOCKED WILL BE TESTED"
 
 [DEF, SF.Seq[1].Main[27]]
-%NAME = "Failed reading of serial code"
+%NAME = "Model.Station.SetBatchTestSocketEnabled"
 
 [SF.Seq[1].Main[28].TS]
-Id = "ID#:NpT8A6kM8RGLhMyCf698CA"
+Id = "ID#:zrbXak4A8RG5h1B7nf4f8B"
 
 [DEF, SF.Seq[1].Main[28].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[28].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.SetIcon"
+SeqName = "Model.TestSocket.SetSerialNumber"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -1912,7 +2227,7 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[28].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-IconPath = "TYPE, SequenceArgument"
+SerialNumber = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[28].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -1921,46 +2236,98 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[28].TS.SData.ActualArgs.IconPath]
+[SF.Seq[1].Main[28].TS.SData.ActualArgs.SerialNumber]
 UseDef = False
-Expr = "\"Inactive.ico\""
+Expr = "Locals.SerialNumber"
 ParamType = 2
 Flags = 0
 
 [DEF, SF.Seq[1].Main[28].TS.SData.Prototype]
 TestSocket = Num
-Caption = Str
+SerialNumber = Str
 
 [SF.Seq[1].Main[28].TS.SData.Prototype]
 TestSocket = Nan
 
 [DEF, SF.Seq[1].Main[28]]
-%NAME = "UI.TestSocket.SetIcon: Socket Inactive"
+%NAME = "Model.TestSocket.SetSerialNumber"
 
 [SF.Seq[1].Main[29].TS]
-Id = "ID#:6mgYsQ8P8RGLjsyCf698CA"
+Id = "ID#:Pat7fBMP8RGLjsyCf698CA"
+PostExpr = "FileGlobals.DeviceTested[RunState.TestSockets.MyIndex] = True"
 
 [DEF, SF.Seq[1].Main[29]]
-%NAME = "Model.TestSocket.SkipProductSequence"
+%NAME = "Set that device is tested"
 
 [SF.Seq[1].Main[30].TS]
-Id = "ID#:0LbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:47bXak4A8RG5h1B7nf4f8B"
 
-[SF.Seq[1].Main[30]]
-ConditionExpr = "Locals.DevicePassedTesting"
+[DEF, SF.Seq[1].Main[30].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[30].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.ShowMessage"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[30].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[30].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[30].TS.SData.ActualArgs.TestSocket]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[30].TS.SData.ActualArgs.Message]
+UseDef = False
+Expr = "ResStr(\"UI_MESSAGES\", \"TESTING_IN_PROGRESS\")"
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[30].TS.SData.ActualArgs.Color]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[30].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[30].TS.SData.Prototype]
+TestSocket = Num
+Message = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[30].TS.SData.Prototype]
+TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[30].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[30]]
-%NAME = "Else If"
+%NAME = "UI.TestSocket.ShowMessage: \"Testing in progress\""
 
 [SF.Seq[1].Main[31].TS]
-Id = "ID#:fF/T4aUQ8RGLksyCf698CA"
+Id = "ID#:27bXak4A8RG5h1B7nf4f8B"
 
 [DEF, SF.Seq[1].Main[31].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[31].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "Model.TestSocket.SetSerialNumber"
+SeqName = "UI.TestSocket.SetCaption"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -1970,7 +2337,7 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[31].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-SerialNumber = "TYPE, SequenceArgument"
+Caption = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[31].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -1979,24 +2346,26 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[31].TS.SData.ActualArgs.SerialNumber]
+[SF.Seq[1].Main[31].TS.SData.ActualArgs.Caption]
 UseDef = False
-Expr = "Locals.SerialNumber"
+Expr Line0001 = "Locals.TestSocketName + (Locals.TestSocketName != \"\" && Locals.SerialNumber != \"\"? \" - \" : \"\") + (Locals.SerialN"
+Expr Line0002 = "umber != \"\"? \"SN: \" + Locals.SerialNumber : \"\")"
 ParamType = 2
 Flags = 0
 
 [DEF, SF.Seq[1].Main[31].TS.SData.Prototype]
 TestSocket = Num
-SerialNumber = Str
+Caption = Str
 
 [SF.Seq[1].Main[31].TS.SData.Prototype]
 TestSocket = Nan
 
 [DEF, SF.Seq[1].Main[31]]
-%NAME = "Model.TestSocket.SetSerialNumber"
+%NAME = "UI.TestSocket.SetCaption: Socket Name + Serial Number"
 
 [SF.Seq[1].Main[32].TS]
-Id = "ID#:0bbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:z7bXak4A8RG5h1B7nf4f8B"
+Mode = "Skip"
 
 [DEF, SF.Seq[1].Main[32].TS]
 SData = "TYPE, SeqCallStepAdditions"
@@ -2026,13 +2395,13 @@ Flags = 0
 
 [SF.Seq[1].Main[32].TS.SData.ActualArgs.Message]
 UseDef = False
-Expr = "ResStr(\"UI_CONTROL\", \"DEVICE_ALREADY_PASSED\")"
+Expr = "ResStr(\"UI_MESSAGES\", \"WAITING_FOR_START\")"
 ParamType = 2
 Flags = 0
 
 [SF.Seq[1].Main[32].TS.SData.ActualArgs.Color]
 UseDef = False
-Expr = "StationGlobals.TEF.Colors.Window"
+Expr = "StationGlobals.TEF.Colors.DialogWaiting"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
@@ -2057,75 +2426,134 @@ FontSize = Nan
 %NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[32]]
-%NAME = "Device Already passed teating"
+%NAME = "UI.TestSocket.ShowMessage: \"Waiting for start\""
 
 [SF.Seq[1].Main[33].TS]
-Id = "ID#:0rbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:+6hZ/KgM8RGLhMyCf698CA"
 
-[DEF, SF.Seq[1].Main[33].TS]
+[SF.Seq[1].Main[33]]
+ConditionExpr = "!Locals.ScanningOK"
+
+[DEF, SF.Seq[1].Main[33]]
+%NAME = "Else If"
+
+[SF.Seq[1].Main[34].TS]
+Id = "ID#:QSVZCDcS8RGLlsyCf698CA"
+
+[DEF, SF.Seq[1].Main[34].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
-[SF.Seq[1].Main[33].TS.SData]
+[SF.Seq[1].Main[34].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.SetIcon"
+SeqName = "Model.TestSocket.SetSerialNumber"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
-[DEF, SF.Seq[1].Main[33].TS.SData]
+[DEF, SF.Seq[1].Main[34].TS.SData]
 ActualArgs = Arguments
 Prototype = Obj
 
-[DEF, SF.Seq[1].Main[33].TS.SData.ActualArgs]
+[DEF, SF.Seq[1].Main[34].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-IconPath = "TYPE, SequenceArgument"
+SerialNumber = "TYPE, SequenceArgument"
 
-[SF.Seq[1].Main[33].TS.SData.ActualArgs.TestSocket]
+[SF.Seq[1].Main[34].TS.SData.ActualArgs.TestSocket]
 UseDef = False
 Expr = "Locals.TestSocket"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[33].TS.SData.ActualArgs.IconPath]
+[SF.Seq[1].Main[34].TS.SData.ActualArgs.SerialNumber]
 UseDef = False
-Expr = "\"Inactive.ico\""
+Expr = "(RunState.TestSockets.MyIndex == 0 )?\"1111\" : \"2222\""
 ParamType = 2
 Flags = 0
 
-[DEF, SF.Seq[1].Main[33].TS.SData.Prototype]
+[DEF, SF.Seq[1].Main[34].TS.SData.Prototype]
 TestSocket = Num
-Caption = Str
+SerialNumber = Str
 
-[SF.Seq[1].Main[33].TS.SData.Prototype]
+[SF.Seq[1].Main[34].TS.SData.Prototype]
 TestSocket = Nan
 
-[DEF, SF.Seq[1].Main[33]]
-%NAME = "UI.TestSocket.SetIcon: Socket Inactive"
-
-[SF.Seq[1].Main[34].TS]
-Id = "ID#:u43otw8P8RGLjsyCf698CA"
-
 [DEF, SF.Seq[1].Main[34]]
-%NAME = "Model.TestSocket.SkipProductSequence"
+%NAME = "Model.TestSocket.SetSerialNumber"
 
 [SF.Seq[1].Main[35].TS]
-Id = "ID#:07bXak4A8RG5h1B7nf4f8B"
+Id = "ID#:QiVZCDcS8RGLlsyCf698CA"
+Mode = "Skip"
 
-[SF.Seq[1].Main[35]]
-ConditionExpr = "!Locals.CanTestDevice"
+[DEF, SF.Seq[1].Main[35].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[35].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.ShowMessage"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[35].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[35].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[35].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[35].TS.SData.ActualArgs.Message]
+UseDef = False
+Expr = "ResStr(\"UI_MESSAGES\", \"SOCKET_IS_DISABLED\")"
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[35].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[35].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[35].TS.SData.Prototype]
+TestSocket = Num
+Message = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[35].TS.SData.Prototype]
+TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[35].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[35]]
-%NAME = "Else If"
+%NAME = "UI.TestSocket.ShowMessage: \"Socket is disabled for the next run\""
 
 [SF.Seq[1].Main[36].TS]
-Id = "ID#:1LbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:QyVZCDcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[36].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[36].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.ShowMessage"
+SeqName = "UI.TestSocket.SetIcon"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -2135,9 +2563,7 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[36].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-Message = "TYPE, SequenceArgument"
-Color = "TYPE, SequenceArgument"
-FontSize = "TYPE, SequenceArgument"
+IconPath = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[36].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -2146,105 +2572,110 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[36].TS.SData.ActualArgs.Message]
+[SF.Seq[1].Main[36].TS.SData.ActualArgs.IconPath]
 UseDef = False
-Expr = "ResStr(\"UI_CONTROL\", \"DEVICE_FAIL_MAX\")"
+Expr = "\"Inactive.ico\""
 ParamType = 2
-Flags = 0
-
-[SF.Seq[1].Main[36].TS.SData.ActualArgs.Color]
-UseDef = False
-Expr = "StationGlobals.TEF.Colors.Window"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[36].TS.SData.ActualArgs.FontSize]
-ParamType = 4
-ParamRepresentation = 1
 Flags = 0
 
 [DEF, SF.Seq[1].Main[36].TS.SData.Prototype]
 TestSocket = Num
-Message = Str
-Color = Num
-FontSize = Num
+Caption = Str
 
 [SF.Seq[1].Main[36].TS.SData.Prototype]
 TestSocket = Nan
-Color = Nan
-FontSize = Nan
-
-[SF.Seq[1].Main[36].TS.SData.Prototype.Color]
-%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[36]]
-%NAME = "Device failed too many times"
+%NAME = "UI.TestSocket.SetIcon: Socket Inactive"
 
 [SF.Seq[1].Main[37].TS]
-Id = "ID#:1bbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:RCVZCDcS8RGLlsyCf698CA"
 
-[DEF, SF.Seq[1].Main[37].TS]
+[DEF, SF.Seq[1].Main[37]]
+%NAME = "Model.TestSocket.SkipProductSequence"
+
+[SF.Seq[1].Main[38].TS]
+Id = "ID#:NZT8A6kM8RGLhMyCf698CA"
+
+[DEF, SF.Seq[1].Main[38].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
-[SF.Seq[1].Main[37].TS.SData]
+[SF.Seq[1].Main[38].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.SetIcon"
+SeqName = "UI.TestSocket.ShowMessage"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
-[DEF, SF.Seq[1].Main[37].TS.SData]
+[DEF, SF.Seq[1].Main[38].TS.SData]
 ActualArgs = Arguments
 Prototype = Obj
 
-[DEF, SF.Seq[1].Main[37].TS.SData.ActualArgs]
+[DEF, SF.Seq[1].Main[38].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-IconPath = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
 
-[SF.Seq[1].Main[37].TS.SData.ActualArgs.TestSocket]
+[SF.Seq[1].Main[38].TS.SData.ActualArgs.TestSocket]
 UseDef = False
 Expr = "Locals.TestSocket"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[37].TS.SData.ActualArgs.IconPath]
+[SF.Seq[1].Main[38].TS.SData.ActualArgs.Message]
 UseDef = False
-Expr = "\"Inactive.ico\""
+Expr = "ResStr(\"UI_CONTROL\", \"CODE_READ_FAILED\")"
 ParamType = 2
 Flags = 0
 
-[DEF, SF.Seq[1].Main[37].TS.SData.Prototype]
+[SF.Seq[1].Main[38].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[38].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[38].TS.SData.Prototype]
 TestSocket = Num
-Caption = Str
+Message = Str
+Color = Num
+FontSize = Num
 
-[SF.Seq[1].Main[37].TS.SData.Prototype]
+[SF.Seq[1].Main[38].TS.SData.Prototype]
 TestSocket = Nan
+Color = Nan
+FontSize = Nan
 
-[DEF, SF.Seq[1].Main[37]]
-%NAME = "UI.TestSocket.SetIcon: Socket Inactive"
-
-[SF.Seq[1].Main[38].TS]
-Id = "ID#:uo3otw8P8RGLjsyCf698CA"
+[SF.Seq[1].Main[38].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[38]]
-%NAME = "Model.TestSocket.SkipProductSequence"
+%NAME = "Failed reading of serial code"
 
 [SF.Seq[1].Main[39].TS]
-Id = "ID#:1rbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:0LbXak4A8RG5h1B7nf4f8B"
+
+[SF.Seq[1].Main[39]]
+ConditionExpr = "Locals.DevicePassedTesting"
 
 [DEF, SF.Seq[1].Main[39]]
-%NAME = "Else"
+%NAME = "Else If"
 
 [SF.Seq[1].Main[40].TS]
-Id = "ID#:17bXak4A8RG5h1B7nf4f8B"
+Id = "ID#:0Q8aATcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[40].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[40].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.ShowMessage"
+SeqName = "Model.TestSocket.SetSerialNumber"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -2254,9 +2685,7 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[40].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-Message = "TYPE, SequenceArgument"
-Color = "TYPE, SequenceArgument"
-FontSize = "TYPE, SequenceArgument"
+SerialNumber = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[40].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -2265,43 +2694,24 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[40].TS.SData.ActualArgs.Message]
+[SF.Seq[1].Main[40].TS.SData.ActualArgs.SerialNumber]
 UseDef = False
-Expr = "ResStr(\"UI_CONTROL\", \"DEVICE_NOT_PRESENT\")"
+Expr = "(RunState.TestSockets.MyIndex == 0 )?\"1111\" : \"2222\""
 ParamType = 2
-Flags = 0
-
-[SF.Seq[1].Main[40].TS.SData.ActualArgs.Color]
-UseDef = False
-Expr = "StationGlobals.TEF.Colors.Window"
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[40].TS.SData.ActualArgs.FontSize]
-ParamType = 4
-ParamRepresentation = 1
 Flags = 0
 
 [DEF, SF.Seq[1].Main[40].TS.SData.Prototype]
 TestSocket = Num
-Message = Str
-Color = Num
-FontSize = Num
+SerialNumber = Str
 
 [SF.Seq[1].Main[40].TS.SData.Prototype]
 TestSocket = Nan
-Color = Nan
-FontSize = Nan
-
-[SF.Seq[1].Main[40].TS.SData.Prototype.Color]
-%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[40]]
-%NAME = "Device Not present in system"
+%NAME = "Model.TestSocket.SetSerialNumber"
 
 [SF.Seq[1].Main[41].TS]
-Id = "ID#:2LbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:0g8aATcS8RGLlsyCf698CA"
 Mode = "Skip"
 
 [DEF, SF.Seq[1].Main[41].TS]
@@ -2366,7 +2776,7 @@ FontSize = Nan
 %NAME = "UI.TestSocket.ShowMessage: \"Socket is disabled for the next run\""
 
 [SF.Seq[1].Main[42].TS]
-Id = "ID#:2bbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:0w8aATcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[42].TS]
 SData = "TYPE, SeqCallStepAdditions"
@@ -2409,70 +2819,93 @@ TestSocket = Nan
 %NAME = "UI.TestSocket.SetIcon: Socket Inactive"
 
 [SF.Seq[1].Main[43].TS]
-Id = "ID#:6GgYsQ8P8RGLjsyCf698CA"
+Id = "ID#:1A8aATcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[43]]
 %NAME = "Model.TestSocket.SkipProductSequence"
 
 [SF.Seq[1].Main[44].TS]
-Id = "ID#:2rbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:0bbXak4A8RG5h1B7nf4f8B"
 
-[DEF, SF.Seq[1].Main[44]]
-%NAME = "End"
-
-[SF.Seq[1].Main[45].TS]
-Id = "ID#:27bXak4A8RG5h1B7nf4f8B"
-
-[DEF, SF.Seq[1].Main[45].TS]
+[DEF, SF.Seq[1].Main[44].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
-[SF.Seq[1].Main[45].TS.SData]
+[SF.Seq[1].Main[44].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.SetCaption"
+SeqName = "UI.TestSocket.ShowMessage"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
-[DEF, SF.Seq[1].Main[45].TS.SData]
+[DEF, SF.Seq[1].Main[44].TS.SData]
 ActualArgs = Arguments
 Prototype = Obj
 
-[DEF, SF.Seq[1].Main[45].TS.SData.ActualArgs]
+[DEF, SF.Seq[1].Main[44].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-Caption = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
 
-[SF.Seq[1].Main[45].TS.SData.ActualArgs.TestSocket]
+[SF.Seq[1].Main[44].TS.SData.ActualArgs.TestSocket]
 UseDef = False
 Expr = "Locals.TestSocket"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[45].TS.SData.ActualArgs.Caption]
+[SF.Seq[1].Main[44].TS.SData.ActualArgs.Message]
 UseDef = False
-Expr Line0001 = "Locals.TestSocketName + (Locals.TestSocketName != \"\" && Locals.SerialNumber != \"\"? \" - \" : \"\") + (Locals.SerialN"
-Expr Line0002 = "umber != \"\"? \"SN: \" + Locals.SerialNumber : \"\")"
+Expr = "ResStr(\"UI_CONTROL\", \"DEVICE_ALREADY_PASSED\")"
 ParamType = 2
 Flags = 0
 
-[DEF, SF.Seq[1].Main[45].TS.SData.Prototype]
-TestSocket = Num
-Caption = Str
+[SF.Seq[1].Main[44].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
 
-[SF.Seq[1].Main[45].TS.SData.Prototype]
+[SF.Seq[1].Main[44].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[44].TS.SData.Prototype]
+TestSocket = Num
+Message = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[44].TS.SData.Prototype]
 TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[44].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
+
+[DEF, SF.Seq[1].Main[44]]
+%NAME = "Device Already passed teating"
+
+[SF.Seq[1].Main[45].TS]
+Id = "ID#:07bXak4A8RG5h1B7nf4f8B"
+
+[SF.Seq[1].Main[45]]
+ConditionExpr = "!Locals.CanTestDevice"
 
 [DEF, SF.Seq[1].Main[45]]
-%NAME = "UI.TestSocket.SetCaption: Socket Name + Serial Number"
+%NAME = "Else If"
 
 [SF.Seq[1].Main[46].TS]
-Id = "ID#:3LbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:xw8aATcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[46].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[46].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.TestStatus.SetValue"
+SeqName = "Model.TestSocket.SetSerialNumber"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -2482,9 +2915,7 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[46].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
-Text = "TYPE, SequenceArgument"
-Color = "TYPE, SequenceArgument"
-FontSize = "TYPE, SequenceArgument"
+SerialNumber = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[46].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -2493,48 +2924,32 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[1].Main[46].TS.SData.ActualArgs.Text]
+[SF.Seq[1].Main[46].TS.SData.ActualArgs.SerialNumber]
 UseDef = False
-Expr = "\"\""
+Expr = "(RunState.TestSockets.MyIndex == 0 )?\"1111\" : \"2222\""
 ParamType = 2
-Flags = 0
-
-[SF.Seq[1].Main[46].TS.SData.ActualArgs.Color]
-ParamType = 4
-ParamRepresentation = 1
-Flags = 0
-
-[SF.Seq[1].Main[46].TS.SData.ActualArgs.FontSize]
-ParamType = 4
-ParamRepresentation = 1
 Flags = 0
 
 [DEF, SF.Seq[1].Main[46].TS.SData.Prototype]
 TestSocket = Num
-Text = Str
-Color = Num
-FontSize = Num
+SerialNumber = Str
 
 [SF.Seq[1].Main[46].TS.SData.Prototype]
 TestSocket = Nan
-Color = Nan
-FontSize = Nan
-
-[SF.Seq[1].Main[46].TS.SData.Prototype.Color]
-%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[46]]
-%NAME = "UI.TestSocket.TestStatus.SetValue: \"\""
+%NAME = "Model.TestSocket.SetSerialNumber"
 
 [SF.Seq[1].Main[47].TS]
-Id = "ID#:3bbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:yA8aATcS8RGLlsyCf698CA"
+Mode = "Skip"
 
 [DEF, SF.Seq[1].Main[47].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[47].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.TestSocket.StepList.Clear"
+SeqName = "UI.TestSocket.ShowMessage"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -2544,6 +2959,9 @@ Prototype = Obj
 
 [DEF, SF.Seq[1].Main[47].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[47].TS.SData.ActualArgs.TestSocket]
 UseDef = False
@@ -2552,17 +2970,43 @@ ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
+[SF.Seq[1].Main[47].TS.SData.ActualArgs.Message]
+UseDef = False
+Expr = "ResStr(\"UI_MESSAGES\", \"SOCKET_IS_DISABLED\")"
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[47].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[47].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
 [DEF, SF.Seq[1].Main[47].TS.SData.Prototype]
 TestSocket = Num
+Message = Str
+Color = Num
+FontSize = Num
 
 [SF.Seq[1].Main[47].TS.SData.Prototype]
 TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[47].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[47]]
-%NAME = "UI.TestSocket.StepList.Clear"
+%NAME = "UI.TestSocket.ShowMessage: \"Socket is disabled for the next run\""
 
 [SF.Seq[1].Main[48].TS]
-Id = "ID#:37bXak4A8RG5h1B7nf4f8B"
+Id = "ID#:yQ8aATcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[48].TS]
 SData = "TYPE, SeqCallStepAdditions"
@@ -2582,13 +3026,15 @@ TestSocket = "TYPE, SequenceArgument"
 IconPath = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[48].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
 [SF.Seq[1].Main[48].TS.SData.ActualArgs.IconPath]
 UseDef = False
-Expr = "\"Active.ico\""
+Expr = "\"Inactive.ico\""
 ParamType = 2
 Flags = 0
 
@@ -2600,28 +3046,86 @@ Caption = Str
 TestSocket = Nan
 
 [DEF, SF.Seq[1].Main[48]]
-%NAME = "UI.TestSocket.SetIcon: Socket Active"
+%NAME = "UI.TestSocket.SetIcon: Socket Inactive"
 
 [SF.Seq[1].Main[49].TS]
-Id = "ID#:bmyKpKUM8RGLhMyCf698CA"
+Id = "ID#:yg8aATcS8RGLlsyCf698CA"
 
 [DEF, SF.Seq[1].Main[49]]
-%NAME = "Stop"
+%NAME = "Model.TestSocket.SkipProductSequence"
 
 [SF.Seq[1].Main[50].TS]
-Id = "ID#:4LbXak4A8RG5h1B7nf4f8B"
-Icon = "ni_blank.ico"
-StatusExpr = "\"\""
-%FLG: StatusExpr = 1
+Id = "ID#:1LbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[50].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[50].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.ShowMessage"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[50].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[50].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[50].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[50].TS.SData.ActualArgs.Message]
+UseDef = False
+Expr = "ResStr(\"UI_CONTROL\", \"DEVICE_FAIL_MAX\")"
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[50].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[50].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[50].TS.SData.Prototype]
+TestSocket = Num
+Message = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[50].TS.SData.Prototype]
+TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[50].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
+
+[DEF, SF.Seq[1].Main[50]]
+%NAME = "Device failed too many times"
 
 [SF.Seq[1].Main[51].TS]
-Id = "ID#:4rbXak4A8RG5h1B7nf4f8B"
-Icon = "ni_blank.ico"
-StatusExpr = "\"\""
-%FLG: StatusExpr = 1
+Id = "ID#:1rbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[51]]
+%NAME = "Else"
 
 [SF.Seq[1].Main[52].TS]
-Id = "ID#:47bXak4A8RG5h1B7nf4f8B"
+Id = "ID#:17bXak4A8RG5h1B7nf4f8B"
 
 [DEF, SF.Seq[1].Main[52].TS]
 SData = "TYPE, SeqCallStepAdditions"
@@ -2643,17 +3147,21 @@ Color = "TYPE, SequenceArgument"
 FontSize = "TYPE, SequenceArgument"
 
 [SF.Seq[1].Main[52].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
 [SF.Seq[1].Main[52].TS.SData.ActualArgs.Message]
 UseDef = False
-Expr = "ResStr(\"UI_MESSAGES\", \"TESTING_IN_PROGRESS\")"
+Expr = "ResStr(\"UI_CONTROL\", \"DEVICE_NOT_PRESENT\")"
 ParamType = 2
 Flags = 0
 
 [SF.Seq[1].Main[52].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
@@ -2678,23 +3186,61 @@ FontSize = Nan
 %NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[52]]
-%NAME = "UI.TestSocket.ShowMessage: \"Testing in progress\""
+%NAME = "Device Not present in system"
 
 [SF.Seq[1].Main[53].TS]
-Id = "ID#:5LbXak4A8RG5h1B7nf4f8B"
-Icon = "ni_blank.ico"
-StatusExpr = "\"\""
-%FLG: StatusExpr = 1
+Id = "ID#:Jw8FXzMS8RGLlsyCf698CA"
+
+[DEF, SF.Seq[1].Main[53].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[53].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "Model.TestSocket.SetSerialNumber"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[53].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[53].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+SerialNumber = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[53].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[53].TS.SData.ActualArgs.SerialNumber]
+UseDef = False
+Expr = "(RunState.TestSockets.MyIndex == 0 )?\"1111\" : \"2222\""
+ParamType = 2
+Flags = 0
+
+[DEF, SF.Seq[1].Main[53].TS.SData.Prototype]
+TestSocket = Num
+SerialNumber = Str
+
+[SF.Seq[1].Main[53].TS.SData.Prototype]
+TestSocket = Nan
+
+[DEF, SF.Seq[1].Main[53]]
+%NAME = "Model.TestSocket.SetSerialNumber"
 
 [SF.Seq[1].Main[54].TS]
-Id = "ID#:5bbXak4A8RG5h1B7nf4f8B"
+Id = "ID#:2LbXak4A8RG5h1B7nf4f8B"
+Mode = "Skip"
 
 [DEF, SF.Seq[1].Main[54].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
 [SF.Seq[1].Main[54].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
-SeqName = "UI.Station.ShowMessage"
+SeqName = "UI.TestSocket.ShowMessage"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
@@ -2703,17 +3249,27 @@ ActualArgs = Arguments
 Prototype = Obj
 
 [DEF, SF.Seq[1].Main[54].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
 Message = "TYPE, SequenceArgument"
 Color = "TYPE, SequenceArgument"
 FontSize = "TYPE, SequenceArgument"
 
+[SF.Seq[1].Main[54].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
 [SF.Seq[1].Main[54].TS.SData.ActualArgs.Message]
 UseDef = False
-Expr = "ResStr(\"UI_MESSAGES\", \"TESTING_IN_PROGRESS\")"
+Expr = "ResStr(\"UI_MESSAGES\", \"SOCKET_IS_DISABLED\")"
 ParamType = 2
 Flags = 0
 
 [SF.Seq[1].Main[54].TS.SData.ActualArgs.Color]
+UseDef = False
+Expr = "StationGlobals.TEF.Colors.Window"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
@@ -2724,11 +3280,13 @@ ParamRepresentation = 1
 Flags = 0
 
 [DEF, SF.Seq[1].Main[54].TS.SData.Prototype]
+TestSocket = Num
 Message = Str
 Color = Num
 FontSize = Num
 
 [SF.Seq[1].Main[54].TS.SData.Prototype]
+TestSocket = Nan
 Color = Nan
 FontSize = Nan
 
@@ -2736,6 +3294,320 @@ FontSize = Nan
 %NUMFMT = "%#x"
 
 [DEF, SF.Seq[1].Main[54]]
+%NAME = "UI.TestSocket.ShowMessage: \"Socket is disabled for the next run\""
+
+[SF.Seq[1].Main[55].TS]
+Id = "ID#:2bbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[55].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[55].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.SetIcon"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[55].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[55].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+IconPath = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[55].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[55].TS.SData.ActualArgs.IconPath]
+UseDef = False
+Expr = "\"Inactive.ico\""
+ParamType = 2
+Flags = 0
+
+[DEF, SF.Seq[1].Main[55].TS.SData.Prototype]
+TestSocket = Num
+Caption = Str
+
+[SF.Seq[1].Main[55].TS.SData.Prototype]
+TestSocket = Nan
+
+[DEF, SF.Seq[1].Main[55]]
+%NAME = "UI.TestSocket.SetIcon: Socket Inactive"
+
+[SF.Seq[1].Main[56].TS]
+Id = "ID#:6GgYsQ8P8RGLjsyCf698CA"
+
+[DEF, SF.Seq[1].Main[56]]
+%NAME = "Model.TestSocket.SkipProductSequence"
+
+[SF.Seq[1].Main[57].TS]
+Id = "ID#:2rbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[57]]
+%NAME = "End"
+
+[SF.Seq[1].Main[58].TS]
+Id = "ID#:PMhryzUS8RGLlsyCf698CA"
+Mode = "Skip"
+
+[DEF, SF.Seq[1].Main[58].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[58].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.SetCaption"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[58].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[58].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+Caption = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[58].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[58].TS.SData.ActualArgs.Caption]
+UseDef = False
+Expr Line0001 = "Locals.TestSocketName + (Locals.TestSocketName != \"\" && Locals.SerialNumber != \"\"? \" - \" : \"\") + (Locals.SerialN"
+Expr Line0002 = "umber != \"\"? \"SN: \" + Locals.SerialNumber : \"\")"
+ParamType = 2
+Flags = 0
+
+[DEF, SF.Seq[1].Main[58].TS.SData.Prototype]
+TestSocket = Num
+Caption = Str
+
+[SF.Seq[1].Main[58].TS.SData.Prototype]
+TestSocket = Nan
+
+[DEF, SF.Seq[1].Main[58]]
+%NAME = "UI.TestSocket.SetCaption: Socket Name + Serial Number"
+
+[SF.Seq[1].Main[59].TS]
+Id = "ID#:3LbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[59].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[59].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.TestStatus.SetValue"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[59].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[59].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+Text = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[59].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[59].TS.SData.ActualArgs.Text]
+UseDef = False
+Expr = "\"\""
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[59].TS.SData.ActualArgs.Color]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[59].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[59].TS.SData.Prototype]
+TestSocket = Num
+Text = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[59].TS.SData.Prototype]
+TestSocket = Nan
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[59].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
+
+[DEF, SF.Seq[1].Main[59]]
+%NAME = "UI.TestSocket.TestStatus.SetValue: \"\""
+
+[SF.Seq[1].Main[60].TS]
+Id = "ID#:3bbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[60].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[60].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.StepList.Clear"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[60].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[60].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[60].TS.SData.ActualArgs.TestSocket]
+UseDef = False
+Expr = "Locals.TestSocket"
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[60].TS.SData.Prototype]
+TestSocket = Num
+
+[SF.Seq[1].Main[60].TS.SData.Prototype]
+TestSocket = Nan
+
+[DEF, SF.Seq[1].Main[60]]
+%NAME = "UI.TestSocket.StepList.Clear"
+
+[SF.Seq[1].Main[61].TS]
+Id = "ID#:37bXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[61].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[61].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.TestSocket.SetIcon"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[61].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[61].TS.SData.ActualArgs]
+TestSocket = "TYPE, SequenceArgument"
+IconPath = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[61].TS.SData.ActualArgs.TestSocket]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[61].TS.SData.ActualArgs.IconPath]
+UseDef = False
+Expr = "\"Active.ico\""
+ParamType = 2
+Flags = 0
+
+[DEF, SF.Seq[1].Main[61].TS.SData.Prototype]
+TestSocket = Num
+Caption = Str
+
+[SF.Seq[1].Main[61].TS.SData.Prototype]
+TestSocket = Nan
+
+[DEF, SF.Seq[1].Main[61]]
+%NAME = "UI.TestSocket.SetIcon: Socket Active"
+
+[SF.Seq[1].Main[62].TS]
+Id = "ID#:bmyKpKUM8RGLhMyCf698CA"
+
+[DEF, SF.Seq[1].Main[62]]
+%NAME = "Stop"
+
+[SF.Seq[1].Main[63].TS]
+Id = "ID#:4LbXak4A8RG5h1B7nf4f8B"
+Icon = "ni_blank.ico"
+StatusExpr = "\"\""
+%FLG: StatusExpr = 1
+
+[SF.Seq[1].Main[64].TS]
+Id = "ID#:4rbXak4A8RG5h1B7nf4f8B"
+Icon = "ni_blank.ico"
+StatusExpr = "\"\""
+%FLG: StatusExpr = 1
+
+[SF.Seq[1].Main[65].TS]
+Id = "ID#:5LbXak4A8RG5h1B7nf4f8B"
+Icon = "ni_blank.ico"
+StatusExpr = "\"\""
+%FLG: StatusExpr = 1
+
+[SF.Seq[1].Main[66].TS]
+Id = "ID#:5bbXak4A8RG5h1B7nf4f8B"
+
+[DEF, SF.Seq[1].Main[66].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[1].Main[66].TS.SData]
+SFPath = "Noffz.UTP.TEF.API.seq"
+SeqName = "UI.Station.ShowMessage"
+CustomThreadAffinity = "-1"
+Trace = "Off"
+
+[DEF, SF.Seq[1].Main[66].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[1].Main[66].TS.SData.ActualArgs]
+Message = "TYPE, SequenceArgument"
+Color = "TYPE, SequenceArgument"
+FontSize = "TYPE, SequenceArgument"
+
+[SF.Seq[1].Main[66].TS.SData.ActualArgs.Message]
+UseDef = False
+Expr = "ResStr(\"UI_MESSAGES\", \"TESTING_IN_PROGRESS\")"
+ParamType = 2
+Flags = 0
+
+[SF.Seq[1].Main[66].TS.SData.ActualArgs.Color]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[SF.Seq[1].Main[66].TS.SData.ActualArgs.FontSize]
+ParamType = 4
+ParamRepresentation = 1
+Flags = 0
+
+[DEF, SF.Seq[1].Main[66].TS.SData.Prototype]
+Message = Str
+Color = Num
+FontSize = Num
+
+[SF.Seq[1].Main[66].TS.SData.Prototype]
+Color = Nan
+FontSize = Nan
+
+[SF.Seq[1].Main[66].TS.SData.Prototype.Color]
+%NUMFMT = "%#x"
+
+[DEF, SF.Seq[1].Main[66]]
 %NAME = "UI.Station.ShowMessage: \"Testing in progress\""
 
 [DEF, SF.Seq[1].Setup]
@@ -2842,7 +3714,7 @@ MainSequenceResult = Ref
 [SF.Seq[2]]
 %FLG: Parameters = 4456448
 %FLG: Locals = 4194304
-%HI: Main = [26]
+%HI: Main = [30]
 %FLG: Main = 4194304
 %HI: Setup = [0]
 %FLG: Setup = 4194304
@@ -2935,13 +3807,21 @@ Rx = Strs
 %[22] = Step
 %TYPE: %[22] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
 %[23] = Step
-%TYPE: %[23] = "NI_Flow_ElseIf"
+%TYPE: %[23] = "NI_Flow_If"
 %[24] = Step
-%TYPE: %[24] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%TYPE: %[24] = "Action"
 %[25] = Step
-%TYPE: %[25] = "NI_Flow_End"
+%TYPE: %[25] = "Action"
 %[26] = Step
 %TYPE: %[26] = "NI_Flow_End"
+%[27] = Step
+%TYPE: %[27] = "NI_Flow_ElseIf"
+%[28] = Step
+%TYPE: %[28] = "NoffzUTP_TEF_UI_TestSocket_ShowMessage"
+%[29] = Step
+%TYPE: %[29] = "NI_Flow_End"
+%[30] = Step
+%TYPE: %[30] = "NI_Flow_End"
 
 [SF.Seq[2].Main[0].TS]
 Id = "ID#:EzMbsBMP8RGLjsyCf698CA"
@@ -4062,97 +4942,428 @@ FontSize = Nan
 %NAME = "Testing passed"
 
 [SF.Seq[2].Main[23].TS]
-Id = "ID#:eroCL7z98BG5hlB7nf4f8B"
+Id = "ID#:Rwy+TDoT8RGLncyCf698CA"
 
 [SF.Seq[2].Main[23]]
-ConditionExpr = "Parameters.UUTStatus == \"Error\""
+ConditionExpr = "Locals.Variant == \"327-LEPL-104-M\""
 
 [DEF, SF.Seq[2].Main[23]]
-%NAME = "Else If"
+%NAME = "If"
 
 [SF.Seq[2].Main[24].TS]
-Id = "ID#:e7oCL7z98BG5hlB7nf4f8B"
+Id = "ID#:a2wnEDkT8RGLncyCf698CA"
 
 [DEF, SF.Seq[2].Main[24].TS]
+SData = "TYPE, FlexGStepAdditions"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall]
+VIPath = "C:\\UTP\\LabView\\Printer\\Modify ZPL File Label.vi"
+Namespace = "6. LABELING.lvlib"
+TDChecksum = 2061668453
+%HI: Parms = [4]
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms]
+%[0] = "TYPE, VIParameter"
+%[1] = "TYPE, VIParameter"
+%[2] = "TYPE, VIParameter"
+%[3] = "TYPE, VIParameter"
+%[4] = "TYPE, VIParameter"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[0]]
+Label = "Variant"
+ArgVal = "Locals.Variant"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+ConnectorNumber = 6
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[0]]
+%NAME = "Variant"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[1]]
+Label = "HW version"
+ArgVal = "StationGlobals.HW_Version[RunState.TestSockets.MyIndex]"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+ConnectorNumber = 1
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[1]]
+%NAME = "HW version"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[2]]
+Label = "SW version"
+ArgVal = "\"\""
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+ConnectorNumber = 2
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[2]]
+%NAME = "SW version"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3]]
+Label = "error in"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+UseDefaultValues = True
+%HI: ArrayClusterEls = [2]
+ConnectorNumber = 5
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+UseDefaultValues = True
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "0"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+UseDefaultValues = True
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "\"\""
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[3]]
+%NAME = "error in"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4]]
+Label = "error out"
+ArgVal = "Step.Result.Error"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+%HI: ArrayClusterEls = [2]
+Direction = 1
+ConnectorNumber = 19
+LegacyClusterType = 2
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "Step.Result.Error.Occurred"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "Step.Result.Error.Code"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "Step.Result.Error.Msg"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[2].Main[24].TS.SData.ViCall.Parms[4]]
+%NAME = "error out"
+
+[DEF, SF.Seq[2].Main[24]]
+%NAME = "Modify label"
+
+[SF.Seq[2].Main[25].TS]
+Id = "ID#:n0e/QjoT8RGLncyCf698CA"
+
+[DEF, SF.Seq[2].Main[25].TS]
+SData = "TYPE, FlexGStepAdditions"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall]
+VIPath = "C:\\UTP\\LabView\\Printer\\Send command to printer.vi"
+Namespace = "6. LABELING.lvlib"
+TDChecksum = -1606628692
+%HI: Parms = [4]
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms]
+%[0] = "TYPE, VIParameter"
+%[1] = "TYPE, VIParameter"
+%[2] = "TYPE, VIParameter"
+%[3] = "TYPE, VIParameter"
+%[4] = "TYPE, VIParameter"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0]]
+Label = "error in (no error)"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+UseDefaultValues = True
+%HI: ArrayClusterEls = [2]
+ConnectorNumber = 8
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+UseDefaultValues = True
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "0"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+UseDefaultValues = True
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "\"\""
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+UseDefaultValues = True
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[0]]
+%NAME = "error in (no error)"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[1]]
+Label = "standard output"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+Direction = 1
+ConnectorNumber = 3
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[1]]
+%NAME = "standard output"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[2]]
+Label = "standard error"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+Direction = 1
+ConnectorNumber = 2
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[2]]
+%NAME = "standard error"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[3]]
+Label = "return code"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+Direction = 1
+ConnectorNumber = 1
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[3]]
+%NAME = "return code"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4]]
+Label = "error out"
+ArgVal = "Step.Result.Error"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+%HI: ArrayClusterEls = [2]
+Direction = 1
+ConnectorNumber = 0
+LegacyClusterType = 2
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "Step.Result.Error.Occurred"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "Step.Result.Error.Code"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "Step.Result.Error.Msg"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[2].Main[25].TS.SData.ViCall.Parms[4]]
+%NAME = "error out"
+
+[DEF, SF.Seq[2].Main[25]]
+%NAME = "Print"
+
+[SF.Seq[2].Main[26].TS]
+Id = "ID#:SQy+TDoT8RGLncyCf698CA"
+
+[DEF, SF.Seq[2].Main[26]]
+%NAME = "End"
+
+[SF.Seq[2].Main[27].TS]
+Id = "ID#:eroCL7z98BG5hlB7nf4f8B"
+
+[SF.Seq[2].Main[27]]
+ConditionExpr = "Parameters.UUTStatus == \"Error\""
+
+[DEF, SF.Seq[2].Main[27]]
+%NAME = "Else If"
+
+[SF.Seq[2].Main[28].TS]
+Id = "ID#:e7oCL7z98BG5hlB7nf4f8B"
+
+[DEF, SF.Seq[2].Main[28].TS]
 SData = "TYPE, SeqCallStepAdditions"
 
-[SF.Seq[2].Main[24].TS.SData]
+[SF.Seq[2].Main[28].TS.SData]
 SFPath = "Noffz.UTP.TEF.API.seq"
 SeqName = "UI.TestSocket.ShowMessage"
 CustomThreadAffinity = "-1"
 Trace = "Off"
 
-[DEF, SF.Seq[2].Main[24].TS.SData]
+[DEF, SF.Seq[2].Main[28].TS.SData]
 ActualArgs = Arguments
 Prototype = Obj
 
-[DEF, SF.Seq[2].Main[24].TS.SData.ActualArgs]
+[DEF, SF.Seq[2].Main[28].TS.SData.ActualArgs]
 TestSocket = "TYPE, SequenceArgument"
 Message = "TYPE, SequenceArgument"
 Color = "TYPE, SequenceArgument"
 FontSize = "TYPE, SequenceArgument"
 
-[SF.Seq[2].Main[24].TS.SData.ActualArgs.TestSocket]
+[SF.Seq[2].Main[28].TS.SData.ActualArgs.TestSocket]
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[2].Main[24].TS.SData.ActualArgs.Message]
+[SF.Seq[2].Main[28].TS.SData.ActualArgs.Message]
 UseDef = False
 Expr = "ResStr(\"UI_MESSAGES\" , \"TEST_ERROR\")"
 ParamType = 2
 Flags = 0
 
-[SF.Seq[2].Main[24].TS.SData.ActualArgs.Color]
+[SF.Seq[2].Main[28].TS.SData.ActualArgs.Color]
 UseDef = False
 Expr = "StationGlobals.TEF.Colors.StatusFailed"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[SF.Seq[2].Main[24].TS.SData.ActualArgs.FontSize]
+[SF.Seq[2].Main[28].TS.SData.ActualArgs.FontSize]
 Expr = "StationGlobals.FontSize"
 ParamType = 4
 ParamRepresentation = 1
 Flags = 0
 
-[DEF, SF.Seq[2].Main[24].TS.SData.Prototype]
+[DEF, SF.Seq[2].Main[28].TS.SData.Prototype]
 TestSocket = Num
 Message = Str
 Color = Num
 FontSize = Num
 
-[SF.Seq[2].Main[24].TS.SData.Prototype]
+[SF.Seq[2].Main[28].TS.SData.Prototype]
 TestSocket = Nan
 Color = Nan
 FontSize = Nan
 
-[SF.Seq[2].Main[24].TS.SData.Prototype.TestSocket]
+[SF.Seq[2].Main[28].TS.SData.Prototype.TestSocket]
 %COMMENT = "Test Socket number. (Default: Current Test Socket Index)"
 
-[SF.Seq[2].Main[24].TS.SData.Prototype.Message]
+[SF.Seq[2].Main[28].TS.SData.Prototype.Message]
 %COMMENT = "Message to show."
 
-[SF.Seq[2].Main[24].TS.SData.Prototype.Color]
+[SF.Seq[2].Main[28].TS.SData.Prototype.Color]
 %COMMENT = "Background color of the Test Socket Message Area. (Default: StationGlobals.TEF.Colors.DialogInfo)"
 %NUMFMT = "%#x"
 
-[SF.Seq[2].Main[24].TS.SData.Prototype.FontSize]
+[SF.Seq[2].Main[28].TS.SData.Prototype.FontSize]
 %COMMENT = "Size of the Font. (Default: Configuration parameter 'DialogTextBox' from Noffz.UTP.TEF.config)"
 
-[DEF, SF.Seq[2].Main[24]]
+[DEF, SF.Seq[2].Main[28]]
 %NAME = "Testing error"
 
-[SF.Seq[2].Main[25].TS]
+[SF.Seq[2].Main[29].TS]
 Id = "ID#:TZg+twj98BG5g1B7nf4f8B"
 
-[DEF, SF.Seq[2].Main[25]]
+[DEF, SF.Seq[2].Main[29]]
 %NAME = "End"
 
-[SF.Seq[2].Main[26].TS]
+[SF.Seq[2].Main[30].TS]
 Id = "ID#:FTMbsBMP8RGLjsyCf698CA"
 
-[DEF, SF.Seq[2].Main[26]]
+[DEF, SF.Seq[2].Main[30]]
 %NAME = "End"
 
 [DEF, SF.Seq[2].Setup]
