@@ -55,6 +55,7 @@
 			<Item Name="Read Encoders.vi" Type="VI" URL="../System/Read Encoders.vi"/>
 			<Item Name="Read cassete code.vi" Type="VI" URL="../System/Read cassete code.vi"/>
 			<Item Name="Monitor DI Port 1.vi" Type="VI" URL="../System/Monitor DI Port 1.vi"/>
+			<Item Name="Get Label data.vi" Type="VI" URL="../System/Get Label data.vi"/>
 			<Item Name="Read Config File.vi" Type="VI" URL="../System/Read Config File.vi"/>
 		</Item>
 		<Item Name="Testing" Type="Folder">

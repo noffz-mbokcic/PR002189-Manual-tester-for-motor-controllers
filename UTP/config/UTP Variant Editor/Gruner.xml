@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <ProductConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Product>
-    <Name>327-LEPL</Name>
+    <Name>327-LEPL-104</Name>
     <VariantIdentifiers>
       <VariantName>
-        <Name>327-LEPL-104-M</Name>
+        <Name>327-LEPL-104-M-a</Name>
         <Description />
       </VariantName>
     </VariantIdentifiers>
     <SequenceFiles>
       <SequenceFile>
-        <Name>EOL_327-LEPL.seq</Name>
-        <Path>C:\UTP\source\ProductSequences\EOL_327-LEPL.seq</Path>
+        <Name>EOL_Interface.seq</Name>
+        <Path>C:\UTP\source\InterfaceSequences\EOL_Interface.seq</Path>
+        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+          </VariantItem>
+          <VariantItem>
+            <Name>327-LEPL-104-M-a</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+      <SequenceFile>
+        <Name>Station_Interface.seq</Name>
+        <Path>C:\UTP\source\InterfaceSequences\Station_Interface.seq</Path>
+        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+          </VariantItem>
+          <VariantItem>
+            <Name>327-LEPL-104-M-a</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+      <SequenceFile>
+        <Name>EOL_327-LEPL-104.seq</Name>
+        <Path>C:\UTP\source\ProductSequences\EOL_327-LEPL-104.seq</Path>
         <SequenceFileItemType>TestSequence</SequenceFileItemType>
         <VariantItems>
           <VariantItem>
@@ -25,11 +61,23 @@
                     <Name>Setup</Name>
                     <StepItems>
                       <StepItem>
+                        <Name>Model.Station.GetOperationMode</Name>
+                        <UniqueId>ID#:f6nHkhEX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NoffzUTP_TEF_Model_Station_GetOperationMode</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Start Operation mode monitornig in Parallel Thread</Name>
                         <UniqueId>ID#:5FA9w/kO8RGLjsyCf698CA</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -41,7 +89,7 @@
                         <UniqueId>ID#:14sweL398BG5hlB7nf4f8B</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>2</Index>
                         <RunMode>Skip</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -53,7 +101,7 @@
                         <UniqueId>ID#:CCp3fT348BG5gFB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>3</Index>
                         <RunMode>Skip</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -65,7 +113,7 @@
                         <UniqueId>ID#:XBJeCPkO8RGLjsyCf698CA</UniqueId>
                         <StepType>NoffzUTP_TEF_Model_TestSocket_GetTestSocketName</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -77,7 +125,7 @@
                         <UniqueId>ID#:XRJeCPkO8RGLjsyCf698CA</UniqueId>
                         <StepType>NoffzUTP_TEF_Model_TestSocket_GetProductAndVariant</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -89,7 +137,7 @@
                         <UniqueId>ID#:Fl9eGVX88BG5glB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -101,7 +149,7 @@
                         <UniqueId>ID#:Iy8/l74I8RGLgMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>6</Index>
+                        <Index>7</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -113,7 +161,7 @@
                         <UniqueId>ID#:JC8/l74I8RGLgMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>7</Index>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -228,10 +276,22 @@
                       </StepItem>
                       <StepItem>
                         <Name>Open All</Name>
-                        <UniqueId>ID#:oSOAthAT8RGLncyCf698CA</UniqueId>
+                        <UniqueId>ID#:z/hqqBAX8RGLo8yCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
                         <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Erase memory</Name>
+                        <UniqueId>ID#:zvhqqBAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>SequenceCall</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -243,7 +303,7 @@
                         <UniqueId>ID#:2IsweL398BG5hlB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -308,17 +368,89 @@
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
+                      <StepItem>
+                        <Name>If</Name>
+                        <UniqueId>ID#:LNdcAhMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Flow_If</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:u6T0IRMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Else If</Name>
+                        <UniqueId>ID#:L9dcAhMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Flow_ElseIf</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:JizlVBMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>End</Name>
+                        <UniqueId>ID#:LtdcAhMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Flow_End</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>8</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
                     </StepItems>
                   </GroupItem>
                   <GroupItem>
                     <Name>Main</Name>
                     <StepItems>
                       <StepItem>
+                        <Name>Production</Name>
+                        <UniqueId>ID#:XsV3MhMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Label</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>2.1.1 Power consumption of the PCB with motor</Name>
                         <UniqueId>ID#:MjWVUpP38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -349,11 +481,82 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:7/Mbc70X8RGLqsyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Muster</Name>
+                        <UniqueId>ID#:YISuOBMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Label</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>2.1.1 Power consumption of the PCB with motor</Name>
+                        <UniqueId>ID#:UAdI0RIX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>16.2</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>21.6</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>mA</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:kj0heb0X8RGLqsyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>2.2.1 Supply Voltage </Name>
                         <UniqueId>ID#:vvP6Z5P38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -384,11 +587,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:kz0heb0X8RGLqsyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Lock</Name>
                         <UniqueId>ID#:HG8TqP0O8RGLjsyCf698CA</UniqueId>
                         <StepType>NI_Lock</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -400,7 +615,7 @@
                         <UniqueId>ID#:CpLMDFz48BG5gFB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>9</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -412,7 +627,7 @@
                         <UniqueId>ID#:KDRQ/ZX38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>10</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -447,7 +662,7 @@
                         <UniqueId>ID#:rXTi7Zn38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>11</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -482,7 +697,7 @@
                         <UniqueId>ID#:bFTuA5r38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
+                        <Index>12</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -517,7 +732,7 @@
                         <UniqueId>ID#:tHNMFZr38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
+                        <Index>13</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -705,6 +920,18 @@
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
                         <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Set Erase of memory</Name>
+                        <UniqueId>ID#:lmclSRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Statement</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -1792,6 +2019,7 @@
                         <Index>48</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
+                          <Name>Limits</Name>
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
@@ -1993,6 +2221,7 @@
                         <Index>61</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
+                          <Name>Limits</Name>
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
@@ -2349,6 +2578,7 @@
                         <Index>85</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
+                          <Name>Limits</Name>
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
@@ -3231,6 +3461,7 @@
                         <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
+                          <Name>Limits</Name>
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
@@ -3353,218 +3584,6 @@
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
                         <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>Measurement</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>If</Name>
-                        <UniqueId>ID#:19PWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>NI_Flow_If</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Set DMM Configuration</Name>
-                        <UniqueId>ID#:2NPWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Wait</Name>
-                        <UniqueId>ID#:2dPWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>NI_Wait</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>2</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Check DMM Configuration</Name>
-                        <UniqueId>ID#:2tPWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>DMM Configuration Failed</Name>
-                        <UniqueId>ID#:29PWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>4</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Save Set Setting</Name>
-                        <UniqueId>ID#:3NPWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>Statement</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>5</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:3dPWnPsO8RGLjsyCf698CA</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>6</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Wait</Name>
-                        <UniqueId>ID#:N1TVscYM8RGLhMyCf698CA</UniqueId>
-                        <StepType>NI_Wait</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>7</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>For</Name>
-                        <UniqueId>ID#:0Mr3wpP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>NI_Flow_For</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>8</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Close Relays</Name>
-                        <UniqueId>ID#:FXSs6ZP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>9</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:0sr3wpP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>10</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Wait</Name>
-                        <UniqueId>ID#:wLRx4M0I8RGLgMyCf698CA</UniqueId>
-                        <StepType>NI_Wait</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>11</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>Read measurement</Name>
-                        <UniqueId>ID#:zsr3wpP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>For</Name>
-                        <UniqueId>ID#:EXSs6ZP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>NI_Flow_For</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Open Relays</Name>
-                        <UniqueId>ID#:98R+GZT38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:EnSs6ZP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>2</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -3822,6 +3841,218 @@
                 </GroupItems>
               </SequenceItem>
               <SequenceItem>
+                <Name>Measurement</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>If</Name>
+                        <UniqueId>ID#:19PWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>NI_Flow_If</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Set DMM Configuration</Name>
+                        <UniqueId>ID#:2NPWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:2dPWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Check DMM Configuration</Name>
+                        <UniqueId>ID#:2tPWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>DMM Configuration Failed</Name>
+                        <UniqueId>ID#:29PWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Save Set Setting</Name>
+                        <UniqueId>ID#:3NPWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>Statement</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>End</Name>
+                        <UniqueId>ID#:3dPWnPsO8RGLjsyCf698CA</UniqueId>
+                        <StepType>NI_Flow_End</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:N1TVscYM8RGLhMyCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>For</Name>
+                        <UniqueId>ID#:0Mr3wpP38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>NI_Flow_For</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>8</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Close Relays</Name>
+                        <UniqueId>ID#:FXSs6ZP38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>9</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>End</Name>
+                        <UniqueId>ID#:0sr3wpP38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>NI_Flow_End</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>10</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:wLRx4M0I8RGLgMyCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>11</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Read measurement</Name>
+                        <UniqueId>ID#:zsr3wpP38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>For</Name>
+                        <UniqueId>ID#:EXSs6ZP38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>NI_Flow_For</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Open Relays</Name>
+                        <UniqueId>ID#:98R+GZT38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>End</Name>
+                        <UniqueId>ID#:EnSs6ZP38BG5f1B7nf4f8B</UniqueId>
+                        <StepType>NI_Flow_End</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
                 <Name>Measurement_More</Name>
                 <GroupItems>
                   <GroupItem>
@@ -4056,10 +4287,186 @@
                   </GroupItem>
                 </GroupItems>
               </SequenceItem>
+              <SequenceItem>
+                <Name>Erase Memory</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Connect Programator GND TP17</Name>
+                        <UniqueId>ID#:x9AatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator PGC TP16</Name>
+                        <UniqueId>ID#:yNAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator PGD TP14</Name>
+                        <UniqueId>ID#:ydAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator MCLR TP12</Name>
+                        <UniqueId>ID#:ytAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator 3.3V TP15</Name>
+                        <UniqueId>ID#:y9AatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:zNAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Erase memory</Name>
+                        <UniqueId>ID#:zdAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Disconnect Programator 3.3V TP15</Name>
+                        <UniqueId>ID#:z9AatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator GND TP17</Name>
+                        <UniqueId>ID#:0NAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator PGC TP16</Name>
+                        <UniqueId>ID#:0dAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator PGD TP14</Name>
+                        <UniqueId>ID#:0tAatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator MCLR TP12</Name>
+                        <UniqueId>ID#:09AatRAX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Open All</Name>
+                        <UniqueId>ID#:s2qgLREX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
             </SequenceItems>
           </VariantItem>
           <VariantItem>
-            <Name>327-LEPL-104-M</Name>
+            <Name>327-LEPL-104-M-a</Name>
             <FileGlobalValueItems />
             <SequenceItems>
               <SequenceItem>
@@ -4074,10 +4481,10 @@
                     <StepItems>
                       <StepItem>
                         <Name>2.1.1 Power consumption of the PCB with motor</Name>
-                        <UniqueId>ID#:MjWVUpP38BG5f1B7nf4f8B</UniqueId>
+                        <UniqueId>ID#:UAdI0RIX8RGLo8yCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4085,7 +4492,7 @@
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>27</Value>
+                              <Value>26</Value>
                             </LimitValueItem>
                           </LimitValueItems>
                         </LimitValueItemContainer>
@@ -4099,41 +4506,6 @@
                 </GroupItems>
               </SequenceItem>
             </SequenceItems>
-          </VariantItem>
-        </VariantItems>
-      </SequenceFile>
-      <SequenceFile>
-        <Name>EOL_Interface.seq</Name>
-        <Path>C:\UTP\source\InterfaceSequences\EOL_Interface.seq</Path>
-        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
-        <VariantItems>
-          <VariantItem>
-            <Name>Master</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-M</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-            <Description />
-          </VariantItem>
-        </VariantItems>
-      </SequenceFile>
-      <SequenceFile>
-        <Name>Station_Interface.seq</Name>
-        <Path>C:\UTP\source\InterfaceSequences\Station_Interface.seq</Path>
-        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
-        <VariantItems>
-          <VariantItem>
-            <Name>Master</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-M</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
             <Description />
           </VariantItem>
         </VariantItems>
@@ -4145,7 +4517,7 @@
     <Name>340-LEPL-102</Name>
     <VariantIdentifiers>
       <VariantName>
-        <Name>340-LEPL-102-A</Name>
+        <Name>340-LEPL-102-A-e</Name>
         <Description />
       </VariantName>
     </VariantIdentifiers>
@@ -4166,11 +4538,23 @@
                     <Name>Setup</Name>
                     <StepItems>
                       <StepItem>
+                        <Name>Model.Station.GetOperationMode</Name>
+                        <UniqueId>ID#:0TIorhEX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NoffzUTP_TEF_Model_Station_GetOperationMode</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Start Operation mode monitornig in Parallel Thread</Name>
                         <UniqueId>ID#:dXNj07z98BG5hlB7nf4f8B</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4182,7 +4566,7 @@
                         <UniqueId>ID#:82wX9vgO8RGLjsyCf698CA</UniqueId>
                         <StepType>NoffzUTP_TEF_Model_TestSocket_GetTestSocketName</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>2</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4194,7 +4578,7 @@
                         <UniqueId>ID#:9WwX9vgO8RGLjsyCf698CA</UniqueId>
                         <StepType>NoffzUTP_TEF_Model_TestSocket_GetProductAndVariant</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>3</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4206,7 +4590,7 @@
                         <UniqueId>ID#:CCp3fT348BG5gFB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4219,11 +4603,23 @@
                     <Name>Main</Name>
                     <StepItems>
                       <StepItem>
+                        <Name>1. Check Device resistance</Name>
+                        <UniqueId>ID#:Gg6nRFwZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>SequenceCall</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>2. Ground/ Basic test</Name>
                         <UniqueId>ID#:5i4Vuery8BG5e1B7nf4f8B</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4235,7 +4631,7 @@
                         <UniqueId>ID#:aUQwjVz48BG5gFB7nf4f8B</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>2</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4247,7 +4643,7 @@
                         <UniqueId>ID#:6wJtEmD48BG5gFB7nf4f8B</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>3</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4296,11 +4692,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Erase memory</Name>
+                        <UniqueId>ID#:0jIorhEX8RGLo8yCf698CA</UniqueId>
+                        <StepType>SequenceCall</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Send the signal that Parallel sequence needs to finish</Name>
                         <UniqueId>ID#:iyFW47z98BG5hlB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4329,17 +4737,304 @@
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
+                      <StepItem>
+                        <Name>Connect 24 AC GND TP1</Name>
+                        <UniqueId>ID#:r8cJUqIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect X3</Name>
+                        <UniqueId>ID#:sMcJUqIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect 24 AC TP2</Name>
+                        <UniqueId>ID#:sccJUqIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:otYkcKIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>2.2.1 Supply AC voltage</Name>
+                        <UniqueId>ID#:Cw+0hl0Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect 24 AC TP2</Name>
+                        <UniqueId>ID#:KMefpqIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect X3</Name>
+                        <UniqueId>ID#:Eu+XYKIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect 24 AC GND TP1</Name>
+                        <UniqueId>ID#:E++XYKIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>8</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>If</Name>
+                        <UniqueId>ID#:bLKbB14Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>NI_Flow_If</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>9</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:nMd4NF4Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>10</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Else</Name>
+                        <UniqueId>ID#:b7KbB14Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>NI_Flow_Else</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>11</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Continue</Name>
+                        <UniqueId>ID#:5iQaEl4Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>Label</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>12</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:RWiV7F0Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>13</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>End</Name>
+                        <UniqueId>ID#:brKbB14Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>NI_Flow_End</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>14</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:wQYkhaIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>15</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
                     </StepItems>
                   </GroupItem>
                   <GroupItem>
                     <Name>Main</Name>
                     <StepItems>
                       <StepItem>
+                        <Name>2.2.1 Supply AC voltage</Name>
+                        <UniqueId>ID#:W3fyHl4Z8RGLsMyCf698CA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>20</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>26</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>V</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>If</Name>
+                        <UniqueId>ID#:rfYdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Flow_If</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:rvYdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Else If</Name>
+                        <UniqueId>ID#:r/YdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Flow_ElseIf</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:sPYdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>End</Name>
+                        <UniqueId>ID#:sfYdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Flow_End</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Production</Name>
+                        <UniqueId>ID#:svYdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Label</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>2.1.1 Power consumption of the PCB with motor</Name>
                         <UniqueId>ID#:vc10qID78BG5gVB7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>7</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4370,11 +5065,82 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:hdszPr0X8RGLqsyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>8</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Muster</Name>
+                        <UniqueId>ID#:s/YdrxMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Label</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>9</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>2.1.1 Power consumption of the PCB with motor</Name>
+                        <UniqueId>ID#:3XAeoBMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>10</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>44.82</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>54.78</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>mA</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:htszPr0X8RGLqsyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>11</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Connect 24 AC GND TP1</Name>
                         <UniqueId>ID#:TeKhT4f78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>12</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4386,7 +5152,7 @@
                         <UniqueId>ID#:E3A7ZM4M8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>13</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4398,7 +5164,7 @@
                         <UniqueId>ID#:MDWVUpP38BG5f1B7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>14</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4410,7 +5176,7 @@
                         <UniqueId>ID#:flSvna4N8RGLiMyCf698CA</UniqueId>
                         <StepType>NI_Lock</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>15</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4422,7 +5188,7 @@
                         <UniqueId>ID#:+qdgDIT78BG5gVB7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>16</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4453,11 +5219,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:EzVKTb0X8RGLqsyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>17</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Connect DMM GND 2 TP10</Name>
                         <UniqueId>ID#:CpLMDFz48BG5gFB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
+                        <Index>18</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4469,7 +5247,7 @@
                         <UniqueId>ID#:KDRQ/ZX38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
+                        <Index>19</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4504,7 +5282,7 @@
                         <UniqueId>ID#:rXTi7Zn38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>8</Index>
+                        <Index>20</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4539,7 +5317,7 @@
                         <UniqueId>ID#:6JUvqKMN8RGLiMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>9</Index>
+                        <Index>21</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4551,7 +5329,7 @@
                         <UniqueId>ID#:55UvqKMN8RGLiMyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>10</Index>
+                        <Index>22</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4586,7 +5364,7 @@
                         <UniqueId>ID#:K7Buy6MN8RGLiMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>11</Index>
+                        <Index>23</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4598,7 +5376,7 @@
                         <UniqueId>ID#:bFTuA5r38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>12</Index>
+                        <Index>24</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4633,7 +5411,7 @@
                         <UniqueId>ID#:tHNMFZr38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>13</Index>
+                        <Index>25</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4681,11 +5459,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Disconnect Load</Name>
+                        <UniqueId>ID#:LtbhYB4T8RGLncyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Disconnect 24 AC TP2</Name>
                         <UniqueId>ID#:Gcs75Yj78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>2</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4697,7 +5487,7 @@
                         <UniqueId>ID#:Gss75Yj78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>3</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4709,7 +5499,7 @@
                         <UniqueId>ID#:FHA7ZM4M8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4721,7 +5511,7 @@
                         <UniqueId>ID#:oXeh/Yj78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4733,7 +5523,7 @@
                         <UniqueId>ID#:0VNxioX78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -4833,6 +5623,18 @@
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
                         <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Set Erase of memory</Name>
+                        <UniqueId>ID#:YgHAciEX8RGLpMyCf698CA</UniqueId>
+                        <StepType>Statement</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5051,11 +5853,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.1.2.1 Measure Blocking Voltage TP14 High</Name>
+                        <UniqueId>ID#:hr1dfboT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>4.1.2.2 Measure Blocking Voltage TP14 Low</Name>
                         <UniqueId>ID#:IoB4i/YO8RGLjsyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5063,12 +5877,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>2</Value>
+                              <Value>1</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>50</Value>
+                              <Value>60</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -5086,11 +5900,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.1.2.2 Measure Blocking Voltage TP14 Low</Name>
+                        <UniqueId>ID#:PRdycLoT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>4.1.3 Check if Engine stopped</Name>
                         <UniqueId>ID#:q5PyAMkM8RGLhMyCf698CA</UniqueId>
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>7</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5102,7 +5928,7 @@
                         <UniqueId>ID#:R0SxSIr78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5114,7 +5940,7 @@
                         <UniqueId>ID#:xa/cvZYR8RGLlcyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
+                        <Index>9</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5126,20 +5952,8 @@
                         <UniqueId>ID#:SESxSIr78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>8</Index>
+                        <Index>10</Index>
                         <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Set Brake Off</Name>
-                        <UniqueId>ID#:CtS++7AN8RGLiMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>9</Index>
-                        <RunMode>Skip</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
                           <LimitValueItems />
@@ -5150,7 +5964,7 @@
                         <UniqueId>ID#:SfzWMskM8RGLhMyCf698CA</UniqueId>
                         <StepType>NI_Wait</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>10</Index>
+                        <Index>11</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5162,7 +5976,7 @@
                         <UniqueId>ID#:wGm2Tor78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>11</Index>
+                        <Index>12</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5174,7 +5988,7 @@
                         <UniqueId>ID#:xK/cvZYR8RGLlcyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>12</Index>
+                        <Index>13</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5186,7 +6000,7 @@
                         <UniqueId>ID#:v2m2Tor78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>13</Index>
+                        <Index>14</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5198,7 +6012,7 @@
                         <UniqueId>ID#:NwAs+JUR8RGLlcyCf698CA</UniqueId>
                         <StepType>NI_Wait</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>14</Index>
+                        <Index>15</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5210,7 +6024,7 @@
                         <UniqueId>ID#:RhVDQMkM8RGLhMyCf698CA</UniqueId>
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>15</Index>
+                        <Index>16</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5222,7 +6036,7 @@
                         <UniqueId>ID#:TYZ7eor78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Label</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>16</Index>
+                        <Index>17</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5234,7 +6048,7 @@
                         <UniqueId>ID#:UOq+p80M8RGLhMyCf698CA</UniqueId>
                         <StepType>Label</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>17</Index>
+                        <Index>18</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5246,7 +6060,7 @@
                         <UniqueId>ID#:B7AtBK4N8RGLiMyCf698CA</UniqueId>
                         <StepType>NI_Lock</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>18</Index>
+                        <Index>19</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5258,7 +6072,7 @@
                         <UniqueId>ID#:XDB5ca4N8RGLiMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>19</Index>
+                        <Index>20</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5270,7 +6084,7 @@
                         <UniqueId>ID#:/gOUQK4N8RGLiMyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>20</Index>
+                        <Index>21</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5301,11 +6115,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.2.1 Confirm LED is GREEN</Name>
+                        <UniqueId>ID#:Nloto7oT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>22</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Close Thermal Switch</Name>
                         <UniqueId>ID#:DNU+Ms4M8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>21</Index>
+                        <Index>23</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5317,7 +6143,7 @@
                         <UniqueId>ID#:+GiChq4N8RGLiMyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>22</Index>
+                        <Index>24</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5348,11 +6174,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.2.2 Confirm LED is RED</Name>
+                        <UniqueId>ID#:N1oto7oT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>25</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Disconnect X3</Name>
                         <UniqueId>ID#:u04fS84M8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>23</Index>
+                        <Index>26</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5364,7 +6202,7 @@
                         <UniqueId>ID#:bI4Qla4N8RGLiMyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>24</Index>
+                        <Index>27</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5395,11 +6233,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.2.3 Confirm LED is OFF</Name>
+                        <UniqueId>ID#:OFoto7oT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>28</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>4.2 Thermal release shutdown STOP</Name>
                         <UniqueId>ID#:dRS9sc0M8RGLhMyCf698CA</UniqueId>
                         <StepType>Label</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>25</Index>
+                        <Index>29</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5654,12 +6504,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>2</Value>
+                              <Value>1</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>50</Value>
+                              <Value>60</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -5769,7 +6619,7 @@
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
                         <Index>3</Index>
-                        <RunMode>Normal</RunMode>
+                        <RunMode>Skip</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
                           <LimitValueItems />
@@ -5781,7 +6631,7 @@
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
                         <Index>4</Index>
-                        <RunMode>Normal</RunMode>
+                        <RunMode>Skip</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
                           <LimitValueItems />
@@ -5817,6 +6667,18 @@
                         <StepType>NI_Wait</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
                         <Index>7</Index>
+                        <RunMode>Skip</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:GIMNuqIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5828,7 +6690,7 @@
                         <UniqueId>ID#:0Mr3wpP38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NI_Flow_For</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>8</Index>
+                        <Index>9</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5840,7 +6702,19 @@
                         <UniqueId>ID#:FXSs6ZP38BG5f1B7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>9</Index>
+                        <Index>10</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:GYMNuqIY8RGLr8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>11</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5852,7 +6726,7 @@
                         <UniqueId>ID#:0sr3wpP38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NI_Flow_End</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>10</Index>
+                        <Index>12</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -5864,7 +6738,7 @@
                         <UniqueId>ID#:Xs8FdcYM8RGLhMyCf698CA</UniqueId>
                         <StepType>NI_Wait</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>11</Index>
+                        <Index>13</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6201,10 +7075,239 @@
                   </GroupItem>
                 </GroupItems>
               </SequenceItem>
+              <SequenceItem>
+                <Name>Erase Memory</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Connect Programator 5V TP11</Name>
+                        <UniqueId>ID#:/N4ummEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator GND TP10</Name>
+                        <UniqueId>ID#:/d4ummEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator PGC TP8</Name>
+                        <UniqueId>ID#:/t4ummEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator PGD TP9</Name>
+                        <UniqueId>ID#:/94ummEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator MCLR TP12</Name>
+                        <UniqueId>ID#:AN8ummEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:hTOUuREX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Erase memory</Name>
+                        <UniqueId>ID#:hjOUuREX8RGLo8yCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Disconnect Programator 5V TP11</Name>
+                        <UniqueId>ID#:h2BfoGEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator GND TP10</Name>
+                        <UniqueId>ID#:iGBfoGEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator PGC TP8</Name>
+                        <UniqueId>ID#:iWBfoGEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator PGD TP9</Name>
+                        <UniqueId>ID#:imBfoGEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator MCLR TP12</Name>
+                        <UniqueId>ID#:i2BfoGEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Open All</Name>
+                        <UniqueId>ID#:c8FHYhIX8RGLo8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
+                <Name>Resistance check</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>1.0.0 Check Device resistance</Name>
+                        <UniqueId>ID#:ZVMCXlwZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>200</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>12000000</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>Ohm</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
             </SequenceItems>
           </VariantItem>
           <VariantItem>
-            <Name>340-LEPL-102-A</Name>
+            <Name>340-LEPL-102-A-e</Name>
             <FileGlobalValueItems />
             <SequenceItems>
               <SequenceItem>
@@ -6222,7 +7325,25 @@
                         <UniqueId>ID#:vc10qID78BG5gVB7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>95</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>2.1.1 Power consumption of the PCB with motor</Name>
+                        <UniqueId>ID#:3XAeoBMX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>10</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6231,6 +7352,29 @@
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
                               <Value>100</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>2.2.1 Supply AC voltage</Name>
+                        <UniqueId>ID#:+qdgDIT78BG5gVB7nf4f8B</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>16</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>21.6</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>26.4</Value>
                             </LimitValueItem>
                           </LimitValueItems>
                         </LimitValueItemContainer>
@@ -6258,7 +7402,7 @@
                         <UniqueId>ID#:/gOUQK4N8RGLiMyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>20</Index>
+                        <Index>21</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6267,6 +7411,11 @@
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
                               <Value>20.1</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>16</Value>
                             </LimitValueItem>
                           </LimitValueItems>
                         </LimitValueItemContainer>
@@ -6295,7 +7444,7 @@
             <SequenceItems />
           </VariantItem>
           <VariantItem>
-            <Name>340-LEPL-102-A</Name>
+            <Name>340-LEPL-102-A-e</Name>
             <FileGlobalValueItems />
             <SequenceItems />
             <Description />
@@ -6313,7 +7462,7 @@
             <SequenceItems />
           </VariantItem>
           <VariantItem>
-            <Name>340-LEPL-102-A</Name>
+            <Name>340-LEPL-102-A-e</Name>
             <FileGlobalValueItems />
             <SequenceItems />
             <Description />
@@ -6327,7 +7476,7 @@
     <Name>340-LEPL-103</Name>
     <VariantIdentifiers>
       <VariantName>
-        <Name>340-LEPL-103-A</Name>
+        <Name>340-LEPL-103-A-a</Name>
         <Description />
       </VariantName>
     </VariantIdentifiers>
@@ -6348,11 +7497,23 @@
                     <Name>Setup</Name>
                     <StepItems>
                       <StepItem>
+                        <Name>Model.Station.GetOperationMode</Name>
+                        <UniqueId>ID#:hYZ57xEX8RGLo8yCf698CA</UniqueId>
+                        <StepType>NoffzUTP_TEF_Model_Station_GetOperationMode</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Start Operation mode monitornig in Parallel Thread</Name>
                         <UniqueId>ID#:41A9w/kO8RGLjsyCf698CA</UniqueId>
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>0</Index>
+                        <Index>1</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6364,7 +7525,7 @@
                         <UniqueId>ID#:VhJeCPkO8RGLjsyCf698CA</UniqueId>
                         <StepType>NoffzUTP_TEF_Model_TestSocket_GetTestSocketName</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>2</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6376,7 +7537,7 @@
                         <UniqueId>ID#:VxJeCPkO8RGLjsyCf698CA</UniqueId>
                         <StepType>NoffzUTP_TEF_Model_TestSocket_GetProductAndVariant</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>3</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6388,7 +7549,7 @@
                         <UniqueId>ID#:CCp3fT348BG5gFB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6400,7 +7561,7 @@
                         <UniqueId>ID#:FfcvQcMM8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6502,11 +7663,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Erase memory</Name>
+                        <UniqueId>ID#:+DYa+hEX8RGLo8yCf698CA</UniqueId>
+                        <StepType>SequenceCall</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Send the signal that Parallel sequence needs to finish</Name>
                         <UniqueId>ID#:iyFW47z98BG5hlB7nf4f8B</UniqueId>
                         <StepType>Statement</StepType>
                         <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6529,6 +7702,102 @@
                         <StepType>Action</StepType>
                         <StepItemGroup>Setup</StepItemGroup>
                         <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect 230 AC GND TP1</Name>
+                        <UniqueId>ID#:ZwCdracY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect X3</Name>
+                        <UniqueId>ID#:aACdracY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect 230 AC TP2</Name>
+                        <UniqueId>ID#:aQCdracY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:KvBguqcY8RGLr8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect 230 AC TP2</Name>
+                        <UniqueId>ID#:Tlocx6cY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect X3</Name>
+                        <UniqueId>ID#:T1ocx6cY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect 230 AC GND TP1</Name>
+                        <UniqueId>ID#:UFocx6cY8RGLr8yCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:qa1MzqcY8RGLr8yCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6576,11 +7845,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:gsYGIS8X8RGLpMyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Connect 230 AC GND TP1</Name>
                         <UniqueId>ID#:TeKhT4f78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
+                        <Index>2</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6592,7 +7873,7 @@
                         <UniqueId>ID#:E3A7ZM4M8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>2</Index>
+                        <Index>3</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6604,7 +7885,7 @@
                         <UniqueId>ID#:MDWVUpP38BG5f1B7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6616,7 +7897,7 @@
                         <UniqueId>ID#:oirn038N8RGLh8yCf698CA</UniqueId>
                         <StepType>NI_Lock</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>5</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6628,7 +7909,7 @@
                         <UniqueId>ID#:+qdgDIT78BG5gVB7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6659,11 +7940,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>Goto</Name>
+                        <UniqueId>ID#:wgAcQC8X8RGLpMyCf698CA</UniqueId>
+                        <StepType>Goto</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>7</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Connect DMM GND 2 TP10</Name>
                         <UniqueId>ID#:CpLMDFz48BG5gFB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6675,7 +7968,7 @@
                         <UniqueId>ID#:KDRQ/ZX38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
+                        <Index>9</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6710,7 +8003,7 @@
                         <UniqueId>ID#:Og7JejoO8RGLicyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>8</Index>
+                        <Index>10</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6745,7 +8038,7 @@
                         <UniqueId>ID#:CwZ7dDoO8RGLicyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>9</Index>
+                        <Index>11</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6757,7 +8050,7 @@
                         <UniqueId>ID#:rXTi7Zn38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>10</Index>
+                        <Index>12</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6792,7 +8085,7 @@
                         <UniqueId>ID#:DAZ7dDoO8RGLicyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>11</Index>
+                        <Index>13</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6804,7 +8097,7 @@
                         <UniqueId>ID#:bFTuA5r38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>12</Index>
+                        <Index>14</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -6839,7 +8132,7 @@
                         <UniqueId>ID#:tHNMFZr38BG5f1B7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>13</Index>
+                        <Index>15</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7081,6 +8374,18 @@
                           <LimitValueItems />
                         </LimitValueItemContainer>
                       </StepItem>
+                      <StepItem>
+                        <Name>Set Erase of memory</Name>
+                        <UniqueId>ID#:YwHAciEX8RGLpMyCf698CA</UniqueId>
+                        <StepType>Statement</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
                     </StepItems>
                   </GroupItem>
                   <GroupItem>
@@ -7246,7 +8551,7 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
-                        <Name>4.1.2 Measure Blocking Voltage TP14</Name>
+                        <Name>4.1.2 Measure Blocking Voltage TP14 High</Name>
                         <UniqueId>ID#:nzYPezsO8RGLicyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
@@ -7281,11 +8586,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.1.2 Measure Blocking Voltage TP14 High</Name>
+                        <UniqueId>ID#:O24zl7UT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>4.1.2.2 Measure Blocking Voltage TP14 Low</Name>
                         <UniqueId>ID#:h3PgrPYO8RGLjsyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
+                        <Index>4</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7298,7 +8615,7 @@
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>50</Value>
+                              <Value>60</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -7316,11 +8633,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.1.2.2 Measure Blocking Voltage TP14 Low</Name>
+                        <UniqueId>ID#:kBWLhLUT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>4.1.3 Check if Engine stopped</Name>
                         <UniqueId>ID#:q5PyAMkM8RGLhMyCf698CA</UniqueId>
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7332,7 +8661,7 @@
                         <UniqueId>ID#:R0SxSIr78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>7</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7344,7 +8673,7 @@
                         <UniqueId>ID#:SESxSIr78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
+                        <Index>8</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7356,7 +8685,7 @@
                         <UniqueId>ID#:gmIkNSQS8RGLlsyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
+                        <Index>9</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7368,7 +8697,7 @@
                         <UniqueId>ID#:SfzWMskM8RGLhMyCf698CA</UniqueId>
                         <StepType>NI_Wait</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>8</Index>
+                        <Index>10</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7380,7 +8709,7 @@
                         <UniqueId>ID#:wGm2Tor78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>9</Index>
+                        <Index>11</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7392,7 +8721,7 @@
                         <UniqueId>ID#:g2IkNSQS8RGLlsyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>10</Index>
+                        <Index>12</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7404,7 +8733,7 @@
                         <UniqueId>ID#:v2m2Tor78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>11</Index>
+                        <Index>13</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7416,7 +8745,7 @@
                         <UniqueId>ID#:P2dMiyQS8RGLlsyCf698CA</UniqueId>
                         <StepType>NI_Wait</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>12</Index>
+                        <Index>14</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7428,7 +8757,7 @@
                         <UniqueId>ID#:RhVDQMkM8RGLhMyCf698CA</UniqueId>
                         <StepType>PassFailTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>13</Index>
+                        <Index>15</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7440,7 +8769,7 @@
                         <UniqueId>ID#:TYZ7eor78BG5gVB7nf4f8B</UniqueId>
                         <StepType>Label</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>14</Index>
+                        <Index>16</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7452,7 +8781,7 @@
                         <UniqueId>ID#:UOq+p80M8RGLhMyCf698CA</UniqueId>
                         <StepType>Label</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>15</Index>
+                        <Index>17</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7464,7 +8793,7 @@
                         <UniqueId>ID#:m7HWsToO8RGLicyCf698CA</UniqueId>
                         <StepType>NI_Lock</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>16</Index>
+                        <Index>18</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7476,7 +8805,7 @@
                         <UniqueId>ID#:nLHWsToO8RGLicyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>17</Index>
+                        <Index>19</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7488,7 +8817,7 @@
                         <UniqueId>ID#:pZQcyToO8RGLicyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>18</Index>
+                        <Index>20</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7496,12 +8825,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>16.5</Value>
+                              <Value>16</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>17.11</Value>
+                              <Value>18</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -7519,11 +8848,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.2.1 Confirm LED is GREEN</Name>
+                        <UniqueId>ID#:OPbhPbUT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>21</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Close Thermal Switch</Name>
                         <UniqueId>ID#:DNU+Ms4M8RGLhMyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>19</Index>
+                        <Index>22</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7535,7 +8876,7 @@
                         <UniqueId>ID#:nbHWsToO8RGLicyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>20</Index>
+                        <Index>23</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7543,12 +8884,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>17.14</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>17.5</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -7566,11 +8907,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.2.2 Confirm LED is RED</Name>
+                        <UniqueId>ID#:5am0WLUT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>24</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>Disconnect X3</Name>
                         <UniqueId>ID#:nrHWsToO8RGLicyCf698CA</UniqueId>
                         <StepType>Action</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>21</Index>
+                        <Index>25</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7582,7 +8935,7 @@
                         <UniqueId>ID#:n7HWsToO8RGLicyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>22</Index>
+                        <Index>26</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -7613,11 +8966,23 @@
                         </LimitValueItemContainer>
                       </StepItem>
                       <StepItem>
+                        <Name>4.2.3 Confirm LED is OFF</Name>
+                        <UniqueId>ID#:5qm0WLUT8RGLnsyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>27</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
                         <Name>4.2 Thermal release shutdown STOP</Name>
                         <UniqueId>ID#:dRS9sc0M8RGLhMyCf698CA</UniqueId>
                         <StepType>Label</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>23</Index>
+                        <Index>28</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -8111,7 +9476,7 @@
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>50</Value>
+                              <Value>60</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -8419,10 +9784,186 @@
                   </GroupItem>
                 </GroupItems>
               </SequenceItem>
+              <SequenceItem>
+                <Name>Erase Memory</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Connect Programator 5V TP11</Name>
+                        <UniqueId>ID#:gcK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator GND TP10</Name>
+                        <UniqueId>ID#:gsK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator PGC TP8</Name>
+                        <UniqueId>ID#:g8K7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator PGD TP9</Name>
+                        <UniqueId>ID#:hMK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Connect Programator MCLR TP12</Name>
+                        <UniqueId>ID#:hcK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:hsK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Setup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Erase memory</Name>
+                        <UniqueId>ID#:h8K7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>PassFailTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Disconnect Programator 5V TP11</Name>
+                        <UniqueId>ID#:iMK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator GND TP10</Name>
+                        <UniqueId>ID#:icK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator PGC TP8</Name>
+                        <UniqueId>ID#:isK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator PGD TP9</Name>
+                        <UniqueId>ID#:i8K7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Disconnect Programator MCLR TP12</Name>
+                        <UniqueId>ID#:jMK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Open All</Name>
+                        <UniqueId>ID#:jcK7rmEZ8RGLsMyCf698CA</UniqueId>
+                        <StepType>Action</StepType>
+                        <StepItemGroup>Cleanup</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
             </SequenceItems>
           </VariantItem>
           <VariantItem>
-            <Name>340-LEPL-103-A</Name>
+            <Name>340-LEPL-103-A-a</Name>
             <FileGlobalValueItems />
             <SequenceItems>
               <SequenceItem>
@@ -8440,7 +9981,7 @@
                         <UniqueId>ID#:nbHWsToO8RGLicyCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>20</Index>
+                        <Index>23</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -8476,7 +10017,7 @@
                         <UniqueId>ID#:+qdgDIT78BG5gVB7nf4f8B</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
+                        <Index>6</Index>
                         <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
@@ -8484,7 +10025,12 @@
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>245</Value>
+                              <Value>253</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>207</Value>
                             </LimitValueItem>
                           </LimitValueItems>
                         </LimitValueItemContainer>
@@ -8498,6 +10044,7 @@
                 </GroupItems>
               </SequenceItem>
             </SequenceItems>
+            <Description />
           </VariantItem>
         </VariantItems>
       </SequenceFile>
@@ -8512,7 +10059,7 @@
             <SequenceItems />
           </VariantItem>
           <VariantItem>
-            <Name>340-LEPL-103-A</Name>
+            <Name>340-LEPL-103-A-a</Name>
             <FileGlobalValueItems />
             <SequenceItems />
             <Description />
@@ -8530,7 +10077,7 @@
             <SequenceItems />
           </VariantItem>
           <VariantItem>
-            <Name>340-LEPL-103-A</Name>
+            <Name>340-LEPL-103-A-a</Name>
             <FileGlobalValueItems />
             <SequenceItems />
             <Description />
@@ -8546,6 +10093,6 @@
   </AppInfo>
   <AppInfo>
     <Version>10.0.0.0</Version>
-    <LastModification>2026-02-26T17:14:26.924424+01:00</LastModification>
+    <LastModification>2026-03-06T15:42:00.9135934+01:00</LastModification>
   </AppInfo>
 </ProductConfiguration>

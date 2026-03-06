@@ -1,0 +1,29 @@
+[__Header__]
+ProductName = "TestStand"
+ProductVersion = 23.0.0.49152
+CompatibleProdVersion = 23.0.0.0
+Version = 1022
+Type = ""
+Path = ""
+ProductVersionString = "2023 Q4 (23.0.0.49152)"
+Description = ""
+CharEncoding = "SBCS"
+
+[StatisticData]
+PassedCount = 10
+FailedCount = 1
+%HI: StatusHistory = [10]
+
+[StatisticData.StatusHistory]
+%[0] = "Passed"
+%[1] = "Passed"
+%[2] = "Failed"
+%[3] = "Passed"
+%[4] = "Passed"
+%[5] = "Passed"
+%[6] = "Passed"
+%[7] = "Passed"
+%[8] = "Passed"
+%[9] = "Passed"
+%[10] = "Passed"
+

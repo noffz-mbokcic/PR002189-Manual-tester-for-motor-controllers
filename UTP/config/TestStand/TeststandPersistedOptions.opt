@@ -1,0 +1,1500 @@
+[DEF, %OBJROOT]
+PersistedBreakpointArray = Objs
+PersistedBreakpoint = Obj
+PersistedWatchpointArray = Objs
+
+[PersistedBreakpointArray]
+%HI = [189]
+
+[DEF, PersistedBreakpointArray]
+%[0] = "TYPE, PersistedBreakpoint"
+%[1] = "TYPE, PersistedBreakpoint"
+%[2] = "TYPE, PersistedBreakpoint"
+%[3] = "TYPE, PersistedBreakpoint"
+%[4] = "TYPE, PersistedBreakpoint"
+%[5] = "TYPE, PersistedBreakpoint"
+%[6] = "TYPE, PersistedBreakpoint"
+%[7] = "TYPE, PersistedBreakpoint"
+%[8] = "TYPE, PersistedBreakpoint"
+%[9] = "TYPE, PersistedBreakpoint"
+%[10] = "TYPE, PersistedBreakpoint"
+%[11] = "TYPE, PersistedBreakpoint"
+%[12] = "TYPE, PersistedBreakpoint"
+%[13] = "TYPE, PersistedBreakpoint"
+%[14] = "TYPE, PersistedBreakpoint"
+%[15] = "TYPE, PersistedBreakpoint"
+%[16] = "TYPE, PersistedBreakpoint"
+%[17] = "TYPE, PersistedBreakpoint"
+%[18] = "TYPE, PersistedBreakpoint"
+%[19] = "TYPE, PersistedBreakpoint"
+%[20] = "TYPE, PersistedBreakpoint"
+%[21] = "TYPE, PersistedBreakpoint"
+%[22] = "TYPE, PersistedBreakpoint"
+%[23] = "TYPE, PersistedBreakpoint"
+%[24] = "TYPE, PersistedBreakpoint"
+%[25] = "TYPE, PersistedBreakpoint"
+%[26] = "TYPE, PersistedBreakpoint"
+%[27] = "TYPE, PersistedBreakpoint"
+%[28] = "TYPE, PersistedBreakpoint"
+%[29] = "TYPE, PersistedBreakpoint"
+%[30] = "TYPE, PersistedBreakpoint"
+%[31] = "TYPE, PersistedBreakpoint"
+%[32] = "TYPE, PersistedBreakpoint"
+%[33] = "TYPE, PersistedBreakpoint"
+%[34] = "TYPE, PersistedBreakpoint"
+%[35] = "TYPE, PersistedBreakpoint"
+%[36] = "TYPE, PersistedBreakpoint"
+%[37] = "TYPE, PersistedBreakpoint"
+%[38] = "TYPE, PersistedBreakpoint"
+%[39] = "TYPE, PersistedBreakpoint"
+%[40] = "TYPE, PersistedBreakpoint"
+%[41] = "TYPE, PersistedBreakpoint"
+%[42] = "TYPE, PersistedBreakpoint"
+%[43] = "TYPE, PersistedBreakpoint"
+%[44] = "TYPE, PersistedBreakpoint"
+%[45] = "TYPE, PersistedBreakpoint"
+%[46] = "TYPE, PersistedBreakpoint"
+%[47] = "TYPE, PersistedBreakpoint"
+%[48] = "TYPE, PersistedBreakpoint"
+%[49] = "TYPE, PersistedBreakpoint"
+%[50] = "TYPE, PersistedBreakpoint"
+%[51] = "TYPE, PersistedBreakpoint"
+%[52] = "TYPE, PersistedBreakpoint"
+%[53] = "TYPE, PersistedBreakpoint"
+%[54] = "TYPE, PersistedBreakpoint"
+%[55] = "TYPE, PersistedBreakpoint"
+%[56] = "TYPE, PersistedBreakpoint"
+%[57] = "TYPE, PersistedBreakpoint"
+%[58] = "TYPE, PersistedBreakpoint"
+%[59] = "TYPE, PersistedBreakpoint"
+%[60] = "TYPE, PersistedBreakpoint"
+%[61] = "TYPE, PersistedBreakpoint"
+%[62] = "TYPE, PersistedBreakpoint"
+%[63] = "TYPE, PersistedBreakpoint"
+%[64] = "TYPE, PersistedBreakpoint"
+%[65] = "TYPE, PersistedBreakpoint"
+%[66] = "TYPE, PersistedBreakpoint"
+%[67] = "TYPE, PersistedBreakpoint"
+%[68] = "TYPE, PersistedBreakpoint"
+%[69] = "TYPE, PersistedBreakpoint"
+%[70] = "TYPE, PersistedBreakpoint"
+%[71] = "TYPE, PersistedBreakpoint"
+%[72] = "TYPE, PersistedBreakpoint"
+%[73] = "TYPE, PersistedBreakpoint"
+%[74] = "TYPE, PersistedBreakpoint"
+%[75] = "TYPE, PersistedBreakpoint"
+%[76] = "TYPE, PersistedBreakpoint"
+%[77] = "TYPE, PersistedBreakpoint"
+%[78] = "TYPE, PersistedBreakpoint"
+%[79] = "TYPE, PersistedBreakpoint"
+%[80] = "TYPE, PersistedBreakpoint"
+%[81] = "TYPE, PersistedBreakpoint"
+%[82] = "TYPE, PersistedBreakpoint"
+%[83] = "TYPE, PersistedBreakpoint"
+%[84] = "TYPE, PersistedBreakpoint"
+%[85] = "TYPE, PersistedBreakpoint"
+%[86] = "TYPE, PersistedBreakpoint"
+%[87] = "TYPE, PersistedBreakpoint"
+%[88] = "TYPE, PersistedBreakpoint"
+%[89] = "TYPE, PersistedBreakpoint"
+%[90] = "TYPE, PersistedBreakpoint"
+%[91] = "TYPE, PersistedBreakpoint"
+%[92] = "TYPE, PersistedBreakpoint"
+%[93] = "TYPE, PersistedBreakpoint"
+%[94] = "TYPE, PersistedBreakpoint"
+%[95] = "TYPE, PersistedBreakpoint"
+%[96] = "TYPE, PersistedBreakpoint"
+%[97] = "TYPE, PersistedBreakpoint"
+%[98] = "TYPE, PersistedBreakpoint"
+%[99] = "TYPE, PersistedBreakpoint"
+%[100] = "TYPE, PersistedBreakpoint"
+%[101] = "TYPE, PersistedBreakpoint"
+%[102] = "TYPE, PersistedBreakpoint"
+%[103] = "TYPE, PersistedBreakpoint"
+%[104] = "TYPE, PersistedBreakpoint"
+%[105] = "TYPE, PersistedBreakpoint"
+%[106] = "TYPE, PersistedBreakpoint"
+%[107] = "TYPE, PersistedBreakpoint"
+%[108] = "TYPE, PersistedBreakpoint"
+%[109] = "TYPE, PersistedBreakpoint"
+%[110] = "TYPE, PersistedBreakpoint"
+%[111] = "TYPE, PersistedBreakpoint"
+%[112] = "TYPE, PersistedBreakpoint"
+%[113] = "TYPE, PersistedBreakpoint"
+%[114] = "TYPE, PersistedBreakpoint"
+%[115] = "TYPE, PersistedBreakpoint"
+%[116] = "TYPE, PersistedBreakpoint"
+%[117] = "TYPE, PersistedBreakpoint"
+%[118] = "TYPE, PersistedBreakpoint"
+%[119] = "TYPE, PersistedBreakpoint"
+%[120] = "TYPE, PersistedBreakpoint"
+%[121] = "TYPE, PersistedBreakpoint"
+%[122] = "TYPE, PersistedBreakpoint"
+%[123] = "TYPE, PersistedBreakpoint"
+%[124] = "TYPE, PersistedBreakpoint"
+%[125] = "TYPE, PersistedBreakpoint"
+%[126] = "TYPE, PersistedBreakpoint"
+%[127] = "TYPE, PersistedBreakpoint"
+%[128] = "TYPE, PersistedBreakpoint"
+%[129] = "TYPE, PersistedBreakpoint"
+%[130] = "TYPE, PersistedBreakpoint"
+%[131] = "TYPE, PersistedBreakpoint"
+%[132] = "TYPE, PersistedBreakpoint"
+%[133] = "TYPE, PersistedBreakpoint"
+%[134] = "TYPE, PersistedBreakpoint"
+%[135] = "TYPE, PersistedBreakpoint"
+%[136] = "TYPE, PersistedBreakpoint"
+%[137] = "TYPE, PersistedBreakpoint"
+%[138] = "TYPE, PersistedBreakpoint"
+%[139] = "TYPE, PersistedBreakpoint"
+%[140] = "TYPE, PersistedBreakpoint"
+%[141] = "TYPE, PersistedBreakpoint"
+%[142] = "TYPE, PersistedBreakpoint"
+%[143] = "TYPE, PersistedBreakpoint"
+%[144] = "TYPE, PersistedBreakpoint"
+%[145] = "TYPE, PersistedBreakpoint"
+%[146] = "TYPE, PersistedBreakpoint"
+%[147] = "TYPE, PersistedBreakpoint"
+%[148] = "TYPE, PersistedBreakpoint"
+%[149] = "TYPE, PersistedBreakpoint"
+%[150] = "TYPE, PersistedBreakpoint"
+%[151] = "TYPE, PersistedBreakpoint"
+%[152] = "TYPE, PersistedBreakpoint"
+%[153] = "TYPE, PersistedBreakpoint"
+%[154] = "TYPE, PersistedBreakpoint"
+%[155] = "TYPE, PersistedBreakpoint"
+%[156] = "TYPE, PersistedBreakpoint"
+%[157] = "TYPE, PersistedBreakpoint"
+%[158] = "TYPE, PersistedBreakpoint"
+%[159] = "TYPE, PersistedBreakpoint"
+%[160] = "TYPE, PersistedBreakpoint"
+%[161] = "TYPE, PersistedBreakpoint"
+%[162] = "TYPE, PersistedBreakpoint"
+%[163] = "TYPE, PersistedBreakpoint"
+%[164] = "TYPE, PersistedBreakpoint"
+%[165] = "TYPE, PersistedBreakpoint"
+%[166] = "TYPE, PersistedBreakpoint"
+%[167] = "TYPE, PersistedBreakpoint"
+%[168] = "TYPE, PersistedBreakpoint"
+%[169] = "TYPE, PersistedBreakpoint"
+%[170] = "TYPE, PersistedBreakpoint"
+%[171] = "TYPE, PersistedBreakpoint"
+%[172] = "TYPE, PersistedBreakpoint"
+%[173] = "TYPE, PersistedBreakpoint"
+%[174] = "TYPE, PersistedBreakpoint"
+%[175] = "TYPE, PersistedBreakpoint"
+%[176] = "TYPE, PersistedBreakpoint"
+%[177] = "TYPE, PersistedBreakpoint"
+%[178] = "TYPE, PersistedBreakpoint"
+%[179] = "TYPE, PersistedBreakpoint"
+%[180] = "TYPE, PersistedBreakpoint"
+%[181] = "TYPE, PersistedBreakpoint"
+%[182] = "TYPE, PersistedBreakpoint"
+%[183] = "TYPE, PersistedBreakpoint"
+%[184] = "TYPE, PersistedBreakpoint"
+%[185] = "TYPE, PersistedBreakpoint"
+%[186] = "TYPE, PersistedBreakpoint"
+%[187] = "TYPE, PersistedBreakpoint"
+%[188] = "TYPE, PersistedBreakpoint"
+%[189] = "TYPE, PersistedBreakpoint"
+%NAME = ""
+
+[PersistedBreakpointArray[0]]
+Path = "C:\\Gruner\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Begin"
+StepName = "Open all numato 1"
+StepIndex = 37
+StepId = "ID#:kaMrLlkR8RGLlMyCf698CA"
+
+[PersistedBreakpointArray[1]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Begin"
+StepName = "Model.TestSocket.GetTestSocketName"
+StepId = "ID#:PL7oXiqP3ECiDYEgVyakmD"
+
+[PersistedBreakpointArray[2]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "End"
+Group = 2
+StepName = "Stop Parallel monitor"
+StepId = "ID#:fzlN7vsO8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[3]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+Group = 0
+StepName = "Start Operation mode monitornig in Parallel Thread"
+StepId = "ID#:oI1UNwn98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[4]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "Generate report"
+StepIndex = 14
+StepId = "ID#:8gJm9nMY8RGLrcyCf698CA"
+
+[PersistedBreakpointArray[5]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "GetDUT results"
+StepIndex = 12
+StepId = "ID#:IZg+twj98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[6]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "If"
+StepIndex = 19
+StepId = "ID#:QJg+twj98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[7]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "Else If"
+StepIndex = 22
+StepId = "ID#:Qpg+twj98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[8]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "Else If"
+StepIndex = 25
+StepId = "ID#:Spg+twj98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[9]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "End"
+StepIndex = 35
+StepId = "ID#:TZg+twj98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[10]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+StepName = "Model.TestSocket.GetProductAndVariant"
+StepIndex = 2
+StepId = "ID#:fP74yEgA8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[11]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Post UUT"
+Group = 2
+StepName = "Send the signal that Parallel sequence needs to finish"
+StepId = "ID#:WXK1Kgn98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[12]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+Group = 0
+StepName = "Start Operation mode monitornig in Parallel Thread"
+StepId = "ID#:n41UNwn98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[13]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "Else If"
+StepIndex = 34
+StepId = "ID#:+6hZ/KgM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[14]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "Else If"
+StepIndex = 46
+StepId = "ID#:07bXak4A8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[15]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "Else If"
+StepIndex = 40
+StepId = "ID#:0LbXak4A8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[16]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "Else"
+StepIndex = 52
+StepId = "ID#:1rbXak4A8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[17]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "End"
+StepIndex = 58
+StepId = "ID#:2rbXak4A8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[18]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "UI.Station.ShowMessage: \"Testing in progress\""
+StepIndex = 72
+StepId = "ID#:5bbXak4A8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[19]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "Set test Socket number"
+StepIndex = 10
+StepId = "ID#:K8vb1qUM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[20]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "Model.TestSocket.GetProductAndVariant"
+StepIndex = 3
+StepId = "ID#:KNicrj1n70KDmyJRIFAAAD"
+
+[PersistedBreakpointArray[21]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "If"
+StepIndex = 21
+StepId = "ID#:uk6xbgwP8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[22]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+StepName = "If"
+StepIndex = 27
+StepId = "ID#:zbbXak4A8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[23]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "Pre UUT"
+Group = 2
+StepName = "Send the signal that Parallel sequence needs to finish"
+StepId = "ID#:EL3TMAn98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[24]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "System State Product Interface"
+StepIndex = -1
+
+[PersistedBreakpointArray[25]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "System State Product Interface"
+StepName = "Turn Off Contactor For DUT1"
+StepIndex = 4
+StepId = "ID#:ZNzUjPoO8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[26]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\EOL_Interface.seq"
+SequenceName = "System State Product Interface"
+StepName = "Emergency Light Set Variables"
+StepId = "ID#:tkqNNKQM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[27]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Begin"
+StepIndex = -1
+
+[PersistedBreakpointArray[28]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Begin"
+StepName = "INIT - Power On Reset Light"
+StepIndex = 43
+StepId = "ID#:LNuI1QYP8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[29]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Begin"
+StepName = "Open all numato 1"
+StepIndex = 37
+StepId = "ID#:pPQjeFoR8RGLlMyCf698CA"
+
+[PersistedBreakpointArray[30]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Begin"
+StepName = "Model.Station.GetStationName"
+StepId = "ID#:s1wfaqn/fEucs6YVq011DA"
+
+[PersistedBreakpointArray[31]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Begin"
+StepName = "INIT - Open Fixture"
+StepIndex = 53
+StepId = "ID#:tLDnKQgP8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[32]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Custom Button Clicked"
+StepName = "UI.Station.ShowPopupMessageDialog"
+StepId = "ID#:7QdbTsL0d0W4Bq7B0nRR6C"
+
+[PersistedBreakpointArray[33]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "End"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[34]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "End"
+Group = 2
+StepName = "Stop Parallel monitor"
+StepIndex = 1
+StepId = "ID#:EcI/r5cF8RGLcsyCf698CA"
+
+[PersistedBreakpointArray[35]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Post Batch"
+StepIndex = -1
+
+[PersistedBreakpointArray[36]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Post Batch"
+StepName = "Unlocking fixture"
+StepId = "ID#:oztxCbb98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[37]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Post Batch"
+StepName = "Unlock Fixture"
+StepIndex = 1
+StepId = "ID#:tRFuArb98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[38]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Post Batch"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[39]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+Group = 0
+StepName = "Start Operation mode monitornig in Parallel Thread"
+StepId = "ID#:iSiTQQn98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[40]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Ready for testing"
+StepIndex = 28
+StepId = "ID#:9jSTGfj88BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[41]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Locking Fixture"
+StepIndex = 72
+StepId = "ID#:Chta+wr98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[42]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Check if fixture is still closed"
+StepIndex = 66
+StepId = "ID#:JhPQZwv98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[43]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Else If"
+StepIndex = 40
+StepId = "ID#:KjWTGfj88BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[44]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Setting to abort testing after the first Fail"
+StepIndex = 47
+StepId = "ID#:RDWTGfj88BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[45]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Check if fixture is still closed after locking"
+StepIndex = 77
+StepId = "ID#:ZU7duAv98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[46]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "ProductSelectionDialog.Station.GetProductsAndVariants"
+StepIndex = 87
+StepId = "ID#:uZtXIwF/fU6jNuhQhYzndC"
+
+[PersistedBreakpointArray[47]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Model.TestSocket.GetProductAndVariant"
+StepIndex = 89
+StepId = "ID#:uyjctEsA8RG5h1B7nf4f8B"
+
+[PersistedBreakpointArray[48]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Open Fixture"
+StepIndex = 35
+StepId = "ID#:wsif59IQ8RGLksyCf698CA"
+
+[PersistedBreakpointArray[49]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "MACHINE STATE FOR OPERATING MODE OF THE SYSTEM"
+StepIndex = 11
+StepId = "ID#:xzSTGfj88BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[50]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "If"
+StepIndex = 16
+StepId = "ID#:yjSTGfj88BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[51]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "START OF THE AUTOMATIC - NO ERROR STATE"
+StepIndex = 27
+StepId = "ID#:yzSTGfj88BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[52]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+StepName = "Goto"
+StepIndex = 59
+StepId = "ID#:zOgKDCQT8RGLncyCf698CA"
+
+[PersistedBreakpointArray[53]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Pre Batch"
+Group = 2
+StepName = "Send the signal that Parallel sequence needs to finish"
+StepId = "ID#:iiiTQQn98BG5g1B7nf4f8B"
+
+[PersistedBreakpointArray[54]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+Group = 0
+StepName = "Set Selection variable"
+StepId = "ID#:hltDZyQT8RGLncyCf698CA"
+
+[PersistedBreakpointArray[55]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+Group = 0
+StepName = "Set Selection request"
+StepIndex = 1
+StepId = "ID#:jcKbGCUT8RGLncyCf698CA"
+
+[PersistedBreakpointArray[56]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "End"
+StepIndex = 59
+StepId = "ID#:5WkPVVv88BG5glB7nf4f8B"
+
+[PersistedBreakpointArray[57]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "Check Cassette code"
+StepIndex = 36
+StepId = "ID#:5efw0mD88BG5glB7nf4f8B"
+
+[PersistedBreakpointArray[58]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepIndex = 71
+StepId = "ID#:IvXgjVb88BG5glB7nf4f8B"
+
+[PersistedBreakpointArray[59]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "Get Label data"
+StepIndex = 30
+StepId = "ID#:RUn9ZxoX8RGLpMyCf698CA"
+
+[PersistedBreakpointArray[60]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "If"
+StepIndex = 10
+StepId = "ID#:dQ9OP0lCg0u5tzDPTHi/AB"
+
+[PersistedBreakpointArray[61]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "Else"
+StepIndex = 50
+StepId = "ID#:lqPobVv88BG5glB7nf4f8B"
+
+[PersistedBreakpointArray[62]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "While"
+StepId = "ID#:xZ7iquwS8RGLmsyCf698CA"
+
+[PersistedBreakpointArray[63]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "Model.TestSocket.GetProductAndVariant"
+StepIndex = 23
+StepId = "ID#:yCaIw1X88BG5glB7nf4f8B"
+
+[PersistedBreakpointArray[64]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "Product Selection Confirmed"
+StepName = "Model.TestSocket.SetProductAndVariant"
+StepIndex = 21
+StepId = "ID#:yknp6ggP8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[65]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "System State Main"
+StepName = "Emergency Light Set Variables"
+StepId = "ID#:rAGyvLz98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[66]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "System State Main"
+StepName = "If"
+StepIndex = 4
+StepId = "ID#:rwGyvLz98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[67]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "System State Main"
+StepName = "End"
+StepIndex = 22
+StepId = "ID#:wQGyvLz98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[68]]
+Path = "C:\\UTP\\source\\InterfaceSequences\\Station_Interface.seq"
+SequenceName = "System State Station Interface"
+StepName = "Turn Off Contactor For DUT1"
+StepIndex = 4
+StepId = "ID#:4FAlhfoO8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[69]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL-104.seq"
+Group = 0
+StepName = "Model.Station.GetOperationMode"
+StepId = "ID#:f6nHkhEX8RGLo8yCf698CA"
+
+[PersistedBreakpointArray[70]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL-104.seq"
+StepName = "2. Ground/ Basic test"
+StepId = "ID#:5i4Vuery8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[71]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL-104.seq"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[72]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL-104.seq"
+Group = 2
+StepName = "Erase memory"
+StepIndex = 5
+StepId = "ID#:zvhqqBAX8RGLo8yCf698CA"
+
+[PersistedBreakpointArray[73]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "4. Functional test"
+Group = 0
+StepName = "Turn on Rigol 1 CH1"
+StepId = "ID#:MX3ew2378BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[74]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "4. Functional test"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[75]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "4. Functional test"
+Group = 2
+StepName = "Disconnect Power Supply + TP2"
+StepId = "ID#:WVn/gWD48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[76]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "5. Documentetion"
+StepIndex = -1
+
+[PersistedBreakpointArray[77]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "5. Documentetion"
+StepName = "5.1.1 Set KAT 1 on Reg 1792"
+StepId = "ID#:HQcmR2T78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[78]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "5. Documentetion"
+StepName = "5.1.1 Set SN"
+StepIndex = 1
+StepId = "ID#:MBE8x3sR8RGLlcyCf698CA"
+
+[PersistedBreakpointArray[79]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+SequenceName = "5. Documentetion"
+StepName = "5.1.18 KAT 1 close Reg 1794"
+StepIndex = 2
+StepId = "ID#:NmmNYmT78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[80]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_327-LEPL.seq"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[81]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 0
+StepName = "Connect 24 AC GND "
+StepId = "ID#:MTWVUpP38BG5f1B7nf4f8B"
+
+[PersistedBreakpointArray[82]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "2.1.1 Power consumption of the PCB with motor"
+StepIndex = 7
+StepId = "ID#:vc10qID78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[83]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepName = "Disconnect DMM GND 2 TP10"
+StepIndex = 6
+StepId = "ID#:0VNxioX78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[84]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepName = "UnLock DMM"
+StepId = "ID#:f1Svna4N8RGLiMyCf698CA"
+
+[PersistedBreakpointArray[85]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepName = "Connect Programator 5V TP11"
+StepId = "ID#:jILBqVz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[86]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "3. Programmimng"
+StepIndex = -1
+
+[PersistedBreakpointArray[87]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "3. Programmimng"
+StepName = "3.1.1 Programing"
+StepId = "ID#:oPsEtF/48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[88]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "3. Programmimng"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[89]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "4. Functional test"
+Group = 0
+StepName = "Connect 24 AC GND "
+StepId = "ID#:NqweiqUN8RGLiMyCf698CA"
+
+[PersistedBreakpointArray[90]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "4. Functional test"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[91]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+SequenceName = "4. Functional test"
+Group = 2
+StepName = "Disconnect 24 AC TP2"
+StepIndex = 2
+StepId = "ID#:mfPfmKUN8RGLiMyCf698CA"
+
+[PersistedBreakpointArray[92]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+Group = 0
+StepName = "Set variables"
+StepIndex = 4
+StepId = "ID#:CCp3fT348BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[93]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+Group = 0
+StepName = "Start Operation mode monitornig in Parallel Thread"
+StepIndex = 1
+StepId = "ID#:dXNj07z98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[94]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+StepName = "2. Ground/ Basic test"
+StepIndex = 1
+StepId = "ID#:5i4Vuery8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[95]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+StepName = "4. Functional Test"
+StepIndex = 3
+StepId = "ID#:6wJtEmD48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[96]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+StepName = "3. Programmimng"
+StepIndex = 2
+StepId = "ID#:aUQwjVz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[97]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[98]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102.seq"
+Group = 2
+StepName = "Disconnect PS-"
+StepId = "ID#:x7Jfy+/y8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[99]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 0
+StepIndex = -1
+
+[PersistedBreakpointArray[100]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "Connect DMM GND 2 TP10"
+StepIndex = 4
+StepId = "ID#:CpLMDFz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[101]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[102]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepName = "Disconnect X3"
+StepId = "ID#:FHA7ZM4M8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[103]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepName = "Disconnect 24 AC TP2"
+StepIndex = 3
+StepId = "ID#:Gcs75Yj78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[104]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepIndex = -1
+
+[PersistedBreakpointArray[105]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepName = "Connect Programator 5V TP11"
+StepId = "ID#:jILBqVz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[106]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "3. Programmimng"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[107]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "3. Programmimng"
+Group = 2
+StepName = "Disconnect Programator 5V TP11"
+StepId = "ID#:9Hng/lz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[108]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "4. Functional test"
+Group = 0
+StepIndex = -1
+
+[PersistedBreakpointArray[109]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.1 Check if Engine is running CW"
+StepIndex = 3
+StepId = "ID#:2Uld2McM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[110]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+Group = 0
+StepName = "Set variables"
+StepIndex = 1
+StepId = "ID#:SEka4aMN8RGLiMyCf698CA"
+
+[PersistedBreakpointArray[111]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+Group = 0
+StepName = "Start Operation mode monitornig in Parallel Thread"
+StepId = "ID#:dXNj07z98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[112]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+StepName = "2. Ground/ Basic test"
+StepId = "ID#:5i4Vuery8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[113]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+StepName = "4. Functional Test"
+StepIndex = 2
+StepId = "ID#:6wJtEmD48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[114]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+Group = 2
+StepName = "Send the signal that Parallel sequence needs to finish"
+StepIndex = 17
+StepId = "ID#:iyFW47z98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[115]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-102_A.seq"
+Group = 2
+StepName = "Disconnect PS-"
+StepId = "ID#:x7Jfy+/y8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[116]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103-A.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepName = "Connect Programator 5V TP11"
+StepId = "ID#:jILBqVz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[117]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103-A.seq"
+SequenceName = "3. Programmimng"
+StepName = "3.1.1 Programing"
+StepId = "ID#:oPsEtF/48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[118]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103-A.seq"
+SequenceName = "3. Programmimng"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[119]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 0
+StepName = "Connect 230 AC GND "
+StepId = "ID#:MTWVUpP38BG5f1B7nf4f8B"
+
+[PersistedBreakpointArray[120]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 0
+StepName = "Wait"
+StepIndex = 8
+StepId = "ID#:qa1MzqcY8RGLr8yCf698CA"
+
+[PersistedBreakpointArray[121]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+StepIndex = -1
+
+[PersistedBreakpointArray[122]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "Connect X3"
+StepIndex = 3
+StepId = "ID#:E3A7ZM4M8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[123]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "Connect 230 AC TP2"
+StepIndex = 4
+StepId = "ID#:MDWVUpP38BG5f1B7nf4f8B"
+
+[PersistedBreakpointArray[124]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "Connect 230 AC GND TP1"
+StepIndex = 2
+StepId = "ID#:TeKhT4f78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[125]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[126]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepName = "Connect Programator MCLR TP12"
+StepIndex = 4
+StepId = "ID#:LrKK7Fz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[127]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepName = "Connect Programator 5V TP11"
+StepId = "ID#:jILBqVz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[128]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "3. Programmimng"
+StepName = "3.1.1 Programing"
+StepId = "ID#:oPsEtF/48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[129]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "3. Programmimng"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[130]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+Group = 0
+StepIndex = -1
+
+[PersistedBreakpointArray[131]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.1 Check if Engine is running CW"
+StepIndex = 1
+StepId = "ID#:2Uld2McM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[132]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "Disconnect 230 AC TP2"
+StepIndex = 7
+StepId = "ID#:R0SxSIr78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[133]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.4 Check if Engine is running CW"
+StepIndex = 15
+StepId = "ID#:RhVDQMkM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[134]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "Wait"
+StepIndex = 10
+StepId = "ID#:SfzWMskM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[135]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1 Motor control/torque limitation functionEND"
+StepIndex = 16
+StepId = "ID#:TYZ7eor78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[136]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.2 Thermal release shutdown STOP"
+StepIndex = 28
+StepId = "ID#:dRS9sc0M8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[137]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.2.3 Confirm LED is OFF"
+StepIndex = 26
+StepId = "ID#:n7HWsToO8RGLicyCf698CA"
+
+[PersistedBreakpointArray[138]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.2.2 Confirm LED is RED"
+StepIndex = 23
+StepId = "ID#:nbHWsToO8RGLicyCf698CA"
+
+[PersistedBreakpointArray[139]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.2.1 Confirm LED is GREEN"
+StepIndex = 20
+StepId = "ID#:pZQcyToO8RGLicyCf698CA"
+
+[PersistedBreakpointArray[140]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.3 Check if Engine stopped"
+StepIndex = 6
+StepId = "ID#:q5PyAMkM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[141]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4.1.2 Measure Blocking Voltage TP14"
+Group = 0
+StepIndex = -1
+
+[PersistedBreakpointArray[142]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4.1.2 Measure Blocking Voltage TP14"
+Group = 0
+StepName = "Set DMM Configuration"
+StepId = "ID#:te62bDsO8RGLicyCf698CA"
+
+[PersistedBreakpointArray[143]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+SequenceName = "4.1.2 Measure Blocking Voltage TP14"
+Group = 2
+StepName = "Set Brake Off"
+StepIndex = 2
+StepId = "ID#:vu62bDsO8RGLicyCf698CA"
+
+[PersistedBreakpointArray[144]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+Group = 0
+StepName = "Turn on Contactor"
+StepIndex = 5
+StepId = "ID#:FfcvQcMM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[145]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+StepName = "2. Ground/ Basic test"
+StepId = "ID#:5i4Vuery8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[146]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+StepName = "4. Functional Test"
+StepIndex = 2
+StepId = "ID#:6wJtEmD48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[147]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[148]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+Group = 2
+StepName = "Erase memory"
+StepIndex = 4
+StepId = "ID#:+DYa+hEX8RGLo8yCf698CA"
+
+[PersistedBreakpointArray[149]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-103.seq"
+Group = 2
+StepName = "Turn Off Contactor"
+StepId = "ID#:nQgwocQM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[150]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 0
+StepName = "Connect 230 AC TP2"
+StepId = "ID#:MDWVUpP38BG5f1B7nf4f8B"
+
+[PersistedBreakpointArray[151]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "Connect DMM GND 2 TP10"
+StepIndex = 5
+StepId = "ID#:CpLMDFz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[152]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "2.Ground/ Basic test"
+StepName = "2.1.1 Power consumption of the PCB with motor"
+StepId = "ID#:vc10qID78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[153]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "2.Ground/ Basic test"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[154]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "3. Programmimng"
+Group = 0
+StepName = "Connect Programator 5V TP11"
+StepId = "ID#:jILBqVz48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[155]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "3. Programmimng"
+StepName = "3.1.1 Programing"
+StepId = "ID#:oPsEtF/48BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[156]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "3. Programmimng"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[157]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+Group = 0
+StepIndex = -1
+
+[PersistedBreakpointArray[158]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+StepIndex = -1
+
+[PersistedBreakpointArray[159]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.1 Check if Engine is running CW"
+StepIndex = 2
+StepId = "ID#:2Uld2McM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[160]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.1 Check if Engine is running CW"
+StepIndex = 14
+StepId = "ID#:RhVDQMkM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[161]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+StepName = "Wait"
+StepIndex = 10
+StepId = "ID#:SfzWMskM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[162]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+StepName = "Set Brake On"
+StepIndex = 3
+StepId = "ID#:Z0HDt8gM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[163]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "4. Functional test"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[164]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+Group = 0
+StepName = "Set variables"
+StepIndex = 17
+StepId = "ID#:CCp3fT348BG5gFB7nf4f8B"
+
+[PersistedBreakpointArray[165]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+Group = 0
+StepName = "Turn on Contactor"
+StepIndex = 18
+StepId = "ID#:FfcvQcMM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[166]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+Group = 0
+StepName = "Start Operation mode monitornig in Parallel Thread"
+StepId = "ID#:dXNj07z98BG5hlB7nf4f8B"
+
+[PersistedBreakpointArray[167]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "Measurement"
+Group = 0
+StepName = "Set DMM Configuration"
+StepIndex = 1
+StepId = "ID#:GBs/vpX38BG5f1B7nf4f8B"
+
+[PersistedBreakpointArray[168]]
+Path = "C:\\UTP\\source\\ProductSequences\\EOL_340-LEPL-130-A.seq"
+SequenceName = "Measurement"
+Group = 0
+StepName = "Wait"
+StepIndex = 2
+StepId = "ID#:vg14Y8YM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[169]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.10.2 Check if LED turned ON"
+StepIndex = 71
+StepId = "ID#:H79S4CgP8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[170]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+SequenceName = "4. Functional test"
+StepName = "4.1.10.1 Confirm Turn on LED D8 Reg 24"
+StepIndex = 70
+StepId = "ID#:Hr9S4CgP8RGLjsyCf698CA"
+
+[PersistedBreakpointArray[171]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+Group = 0
+StepName = "If"
+StepIndex = 1
+StepId = "ID#:7rQKC64B8RG5iVB7nf4f8B"
+
+[PersistedBreakpointArray[172]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+Group = 0
+StepName = "Set Current Limit Rigol CH2"
+StepIndex = 35
+StepId = "ID#:JC8/l74I8RGLgMyCf698CA"
+
+[PersistedBreakpointArray[173]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+StepName = "2. Ground/ Basic test"
+StepId = "ID#:5i4Vuery8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[174]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+StepName = "5. Documentation"
+StepIndex = 3
+StepId = "ID#:r109HmT78BG5gVB7nf4f8B"
+
+[PersistedBreakpointArray[175]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+Group = 2
+StepIndex = -1
+
+[PersistedBreakpointArray[176]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+Group = 2
+StepName = "Else If"
+StepIndex = 11
+StepId = "ID#:H+/Ac7UI8RGLgMyCf698CA"
+
+[PersistedBreakpointArray[177]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+Group = 2
+StepName = "If"
+StepIndex = 7
+StepId = "ID#:Hu/Ac7UI8RGLgMyCf698CA"
+
+[PersistedBreakpointArray[178]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_327-LEPL.seq"
+Group = 2
+StepName = "Disconnect PS+"
+StepId = "ID#:xrJfy+/y8BG5e1B7nf4f8B"
+
+[PersistedBreakpointArray[179]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+SequenceName = "2.Ground/ Basic test_2"
+StepName = "Connect 24 AC GND "
+StepId = "ID#:orbSD08Z8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[180]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+SequenceName = "2.Ground/ Basic test_2"
+StepName = "Connect 24 AC TP2"
+StepIndex = 3
+StepId = "ID#:prbSD08Z8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[181]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+SequenceName = "2.Ground/ Basic test_2"
+StepName = "Connect DMM GND 2 TP10"
+StepIndex = 10
+StepId = "ID#:qbbSD08Z8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[182]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+SequenceName = "2.Ground/ Basic test_2"
+Group = 2
+StepName = "Disconnect 24 AC TP2"
+StepId = "ID#:srbSD08Z8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[183]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+SequenceName = "2.Ground/ Basic test_2"
+Group = 2
+StepName = "Disconnect DMM GND 2 TP10"
+StepIndex = 4
+StepId = "ID#:trbSD08Z8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[184]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+Group = 0
+StepName = "Initialize Advantech DI 0-7"
+StepIndex = 12
+StepId = "ID#:022pNMUM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[185]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+Group = 0
+StepName = "Get Relays 340-LEPL-102-A"
+StepIndex = 13
+StepId = "ID#:80pz6U4Z8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[186]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+Group = 0
+StepName = "Set variables"
+StepIndex = 1
+StepId = "ID#:SEka4aMN8RGLiMyCf698CA"
+
+[PersistedBreakpointArray[187]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+Group = 0
+StepName = "Initialize Numato 1"
+StepIndex = 3
+StepId = "ID#:au91D8UM8RGLhMyCf698CA"
+
+[PersistedBreakpointArray[188]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+StepName = "2.0.0 Check Device resistance"
+StepId = "ID#:/edtzFIZ8RGLsMyCf698CA"
+
+[PersistedBreakpointArray[189]]
+Path = "C:\\UTP\\source\\ProductSequences\\For manual testing\\EOL_340-LEPL-102 - resistance test.seq"
+StepName = "2. Ground/ Basic test"
+StepIndex = 1
+StepId = "ID#:t7bSD08Z8RGLsMyCf698CA"
+
+[%TYPES]
+PersistedBreakpoint = "PersistedBreakpoint"
+
+[DEF, PersistedBreakpoint]
+%LOCATION = "StdTypes"
+Path = Str
+SequenceName = Str
+Group = Num
+StepName = Str
+StepIndex = Num
+StepId = Str
+IsEnabled = Bool
+PassCount = Num
+Condition = Str
+%ROOT_TYPE = True
+
+[PersistedBreakpoint]
+SequenceName = "MainSequence"
+Group = 1
+IsEnabled = True
+%TIMESTAMP = 1695801917
+%VERSION = "23.0.0.49152"
+%TYPELASTMOD = "23.0.0.49152"
+%MINPRODVER = "23.0.0.0"
+%TYPE_FLG = 33554436
+
+[__Header__]
+ProductName = "TestStand"
+ProductVersion = 23.0.0.49152
+CompatibleProdVersion = 23.0.0.0
+Version = 1022
+Type = "TEPersisted"
+Path = ""
+ProductVersionString = "2023 Q4 (23.0.0.49152)"
+Description = ""
+CharEncoding = ""
+
+[DEF, PersistedWatchpointArray]
+%NAME = ""
+
