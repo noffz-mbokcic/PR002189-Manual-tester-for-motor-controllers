@@ -10,15 +10,6 @@ Description = ""
 CharEncoding = "SBCS"
 
 [StatisticData]
-PassedCount = 6
+PassedCount = 0
 FailedCount = 0
-%HI: StatusHistory = [5]
-
-[StatisticData.StatusHistory]
-%[0] = "Passed"
-%[1] = "Passed"
-%[2] = "Passed"
-%[3] = "Passed"
-%[4] = "Passed"
-%[5] = "Passed"
 
