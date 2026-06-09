@@ -253,7 +253,7 @@ UART2 = Str
 %[26] = Step
 %TYPE: %[26] = "Action"
 %[27] = Step
-%TYPE: %[27] = "Label"
+%TYPE: %[27] = "NI_LV_RunVIAsynchronously"
 %[28] = Step
 %TYPE: %[28] = "Label"
 %[29] = Step
@@ -684,6 +684,7 @@ StatusExpr = "\"\""
 %FLG: %[17] = 67108864
 %FLG: %[19] = 67108864
 %FLG: %[22] = 67108864
+<<<<<<< HEAD
 %FLG: %[23] = 67108864
 %FLG: %[27] = 67108864
 %FLG: %[28] = 67108864
@@ -692,6 +693,15 @@ StatusExpr = "\"\""
 %FLG: %[67] = 67108864
 %FLG: %[69] = 67108864
 %FLG: %[76] = 67108864
+=======
+%FLG: %[26] = 67108864
+%FLG: %[28] = 67108864
+%FLG: %[46] = 67108864
+%FLG: %[62] = 67108864
+%FLG: %[63] = 67108864
+%FLG: %[65] = 67108864
+%FLG: %[72] = 67108864
+>>>>>>> main
 
 [SF.Seq[0].Main[12].TS]
 Id = "ID#:MYjeBRXlg02qSGkeh3L6TB"
@@ -2945,6 +2955,7 @@ DisplayType = "ASCII String"
 %NAME = "Get Relays 340-LEPL-102-A"
 
 [SF.Seq[0].Main[26].TS]
+<<<<<<< HEAD
 Id = "ID#:OSf8t2cD8RGLccyCf698CA"
 ResultOption = 0
 
@@ -2957,35 +2968,156 @@ TDChecksum = -995260404
 %HI: Parms = [3]
 
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms]
+=======
+Id = "ID#:n0Fi47sb8RGLscyCf698CA"
+Icon = "ni_blank.ico"
+StatusExpr = "\"\""
+%FLG: StatusExpr = 1
+
+[SF.Seq[0].Main[27].TS]
+Id = "ID#:XFNoGaIM8RGLhMyCf698CA"
+
+[DEF, SF.Seq[0].Main[27].TS]
+SData = "TYPE, SeqCallStepAdditions"
+
+[SF.Seq[0].Main[27].TS.SData]
+SFPathExpr = "Evaluate(Step.SequenceFileExpr)"
+SeqNameExpr = "\"MainSequence\""
+SpecifyByExpr = True
+UsePrototype = True
+AutoWaitAsync = False
+CustomThreadAffinity = "-1"
+ThreadOpt = 1
+
+[DEF, SF.Seq[0].Main[27].TS.SData]
+ActualArgs = Arguments
+Prototype = Obj
+
+[DEF, SF.Seq[0].Main[27].TS.SData.ActualArgs]
+Parameter0 = "TYPE, SequenceArgument"
+Parameter1 = "TYPE, SequenceArgument"
+Parameter2 = "TYPE, SequenceArgument"
+Parameter3 = "TYPE, SequenceArgument"
+Parameter4 = "TYPE, SequenceArgument"
+
+[SF.Seq[0].Main[27].TS.SData.ActualArgs.Parameter0]
+UseDef = False
+Expr = "StationGlobals.References.AdvantechDIO.DI_Port1"
+ParamType = 1
+Flags = 0
+
+[SF.Seq[0].Main[27].TS.SData.ActualArgs.Parameter1]
+UseDef = False
+Expr = "RunState.ThisContext"
+ParamType = 1
+
+[SF.Seq[0].Main[27].TS.SData.ActualArgs.Parameter2]
+UseDef = False
+Expr = "False"
+ParamType = 1
+Flags = 0
+
+[SF.Seq[0].Main[27].TS.SData.ActualArgs.Parameter3]
+UseDef = False
+Expr = "0"
+ParamType = 1
+Flags = 0
+
+[SF.Seq[0].Main[27].TS.SData.ActualArgs.Parameter4]
+UseDef = False
+Expr = "\"\""
+ParamType = 1
+Flags = 0
+
+[DEF, SF.Seq[0].Main[27].TS.SData.Prototype]
+Parameter0 = Obj
+Parameter1 = Obj
+Parameter2 = Obj
+Parameter3 = Obj
+Parameter4 = Obj
+
+[SF.Seq[0].Main[27].TS.SData.Prototype]
+%FLG: Parameter1 = 4
+
+[SF.Seq[0].Main[27].VIModule.ViCall]
+VIPath = "C:\\UTP\\LabView\\System\\Monitor DI Port 1.vi"
+TDChecksum = 322755235
+%HI: Parms = [3]
+
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms]
+>>>>>>> main
 %[0] = "TYPE, VIParameter"
 %[1] = "TYPE, VIParameter"
 %[2] = "TYPE, VIParameter"
 %[3] = "TYPE, VIParameter"
 
+<<<<<<< HEAD
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0]]
 Label = "error in (no error)"
+=======
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[0]]
+Label = "DI_Port1_in"
+ArgVal = "StationGlobals.References.AdvantechDIO.DI_Port1"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+ConnectorNumber = 11
+
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[0]]
+%NAME = "DI_Port1_in"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[1]]
+Label = "Sequence Context In"
+ArgVal = "RunState.ThisContext"
+Type = 4
+WireRequirement = 1
+DisplayType = "Object Reference"
+ConnectorNumber = 10
+
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[1]]
+%NAME = "Sequence Context In"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[2]]
+Label = "Error in"
+>>>>>>> main
 Type = 3
 WireRequirement = 1
 DisplayType = "Container"
 %HI: ArrayClusterEls = [2]
 ConnectorNumber = 8
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls]
+>>>>>>> main
 %[0] = "TYPE, VIParameterElement"
 %[1] = "TYPE, VIParameterElement"
 %[2] = "TYPE, VIParameterElement"
 
+<<<<<<< HEAD
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls[0]]
+=======
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls[0]]
+>>>>>>> main
 Label = "status"
 ArgVal = "False"
 Type = 2
 WireRequirement = 1
 DisplayType = "Boolean"
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls[0]]
 %NAME = "status"
 
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls[1]]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls[1]]
+>>>>>>> main
 Label = "code"
 ArgVal = "0"
 Type = 0
@@ -2993,16 +3125,24 @@ WireRequirement = 1
 NumType = 4
 DisplayType = "Number (I32)"
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls[1]]
 %NAME = "code"
 
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls[2]]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls[2]]
+>>>>>>> main
 Label = "source"
 ArgVal = "\"\""
 Type = 1
 WireRequirement = 1
 DisplayType = "ASCII String"
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[0].ArrayClusterEls[2]]
 %NAME = "source"
 
@@ -3568,6 +3708,15 @@ DisplayType = "Number (I32)"
 %NAME = "DUT2"
 
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3]]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[2].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[2]]
+%NAME = "Error in"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[3]]
+>>>>>>> main
 Label = "error out"
 ArgVal = "Step.Result.Error"
 Type = 3
@@ -3578,22 +3727,37 @@ Direction = 1
 ConnectorNumber = 0
 LegacyClusterType = 2
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls]
+>>>>>>> main
 %[0] = "TYPE, VIParameterElement"
 %[1] = "TYPE, VIParameterElement"
 %[2] = "TYPE, VIParameterElement"
 
+<<<<<<< HEAD
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+=======
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls[0]]
+>>>>>>> main
 Label = "status"
 ArgVal = "Step.Result.Error.Occurred"
 Type = 2
 WireRequirement = 1
 DisplayType = "Boolean"
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
 %NAME = "status"
 
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls[1]]
+>>>>>>> main
 Label = "code"
 ArgVal = "Step.Result.Error.Code"
 Type = 0
@@ -3601,16 +3765,24 @@ WireRequirement = 1
 NumType = 4
 DisplayType = "Number (I32)"
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
 %NAME = "code"
 
 [SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls[2]]
+>>>>>>> main
 Label = "source"
 ArgVal = "Step.Result.Error.Msg"
 Type = 1
 WireRequirement = 1
 DisplayType = "ASCII String"
 
+<<<<<<< HEAD
 [DEF, SF.Seq[0].Main[26].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
 %NAME = "source"
 
@@ -3625,6 +3797,19 @@ Id = "ID#:n0Fi47sb8RGLscyCf698CA"
 Icon = "ni_blank.ico"
 StatusExpr = "\"\""
 %FLG: StatusExpr = 1
+=======
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[3].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[0].Main[27].VIModule.ViCall.Parms[3]]
+%NAME = "error out"
+
+[SF.Seq[0].Main[27]]
+%FLG: VIModule = 2097152
+
+[DEF, SF.Seq[0].Main[27]]
+%NAME = "Run VI Asynchronously"
+>>>>>>> main
 
 [SF.Seq[0].Main[28].TS]
 Id = "ID#:nkFi47sb8RGLscyCf698CA"
@@ -5151,7 +5336,11 @@ DisplayType = "ASCII String"
 %NAME = "Initialize RS485 DUT2"
 
 [SF.Seq[0].Main[38].TS]
+<<<<<<< HEAD
 Id = "ID#:KPWA/9tj8RGLwMyCf698CA"
+=======
+Id = "ID#:EIQYJPf88BG5g1B7nf4f8B"
+>>>>>>> main
 ResultOption = 0
 
 [DEF, SF.Seq[0].Main[38].TS]
@@ -5171,8 +5360,13 @@ TDChecksum = -1479760931
 %[3] = "TYPE, VIParameter"
 
 [SF.Seq[0].Main[38].TS.SData.ViCall.Parms[0]]
+<<<<<<< HEAD
 Label = "NI name"
 ArgVal = "Locals.Reasource_Names.UART1"
+=======
+Label = "Physical channels in"
+ArgVal = "\"PCI-1750,BID#0/port0\" "
+>>>>>>> main
 Type = 1
 WireRequirement = 1
 DisplayType = "ASCII String"
@@ -5233,9 +5427,15 @@ UseDefaultValues = True
 %NAME = "error in"
 
 [SF.Seq[0].Main[38].TS.SData.ViCall.Parms[2]]
+<<<<<<< HEAD
 Label = "Modbus master out"
 ArgVal = "StationGlobals.References.SerialCommunication_DUT1"
 Type = 4
+=======
+Label = "task out"
+ArgVal = "StationGlobals.References.AdvantechDIO.DI_Port0"
+Type = 0
+>>>>>>> main
 WireRequirement = 1
 ReferenceType = 4
 DisplayType = "Object Reference"
@@ -5296,20 +5496,34 @@ DisplayType = "ASCII String"
 %NAME = "error out"
 
 [DEF, SF.Seq[0].Main[38]]
+<<<<<<< HEAD
 %NAME = "Initialize UART DUT1"
 
 [SF.Seq[0].Main[39].TS]
 Id = "ID#:cW54Jtxj8RGLwMyCf698CA"
+=======
+%NAME = "Initialize Advantech DI 0-7 - Port 0"
+
+[SF.Seq[0].Main[39].TS]
+Id = "ID#:T2xbcZkM8RGLhMyCf698CA"
+>>>>>>> main
 ResultOption = 0
 
 [DEF, SF.Seq[0].Main[39].TS]
 SData = "TYPE, FlexGStepAdditions"
 
 [SF.Seq[0].Main[39].TS.SData.ViCall]
+<<<<<<< HEAD
 ProjectPath = "..\\..\\LabView\\Grunner.lvproj"
 VIPath = "My Computer\\RS485\\RS485.lvlib\\Initialize.vi"
 Namespace = "RS485.lvlib"
 TDChecksum = -1479760931
+=======
+ProjectPath = "Grunner.lvproj"
+VIPath = "My Computer\\PCIe-1750 DIO\\DO_Relay.lvlib\\Initialize Input.vi"
+Namespace = "DO_Relay.lvlib"
+TDChecksum = -996122137
+>>>>>>> main
 %HI: Parms = [3]
 
 [DEF, SF.Seq[0].Main[39].TS.SData.ViCall.Parms]
@@ -5319,8 +5533,13 @@ TDChecksum = -1479760931
 %[3] = "TYPE, VIParameter"
 
 [SF.Seq[0].Main[39].TS.SData.ViCall.Parms[0]]
+<<<<<<< HEAD
 Label = "NI name"
 ArgVal = "Locals.Reasource_Names.UART2"
+=======
+Label = "Physical channels in"
+ArgVal = "\"PCI-1750,BID#0/port1\" "
+>>>>>>> main
 Type = 1
 WireRequirement = 1
 DisplayType = "ASCII String"
@@ -5381,9 +5600,15 @@ UseDefaultValues = True
 %NAME = "error in"
 
 [SF.Seq[0].Main[39].TS.SData.ViCall.Parms[2]]
+<<<<<<< HEAD
 Label = "Modbus master out"
 ArgVal = "StationGlobals.References.SerialCommunication_DUT2"
 Type = 4
+=======
+Label = "task out"
+ArgVal = "StationGlobals.References.AdvantechDIO.DI_Port1"
+Type = 0
+>>>>>>> main
 WireRequirement = 1
 ReferenceType = 4
 DisplayType = "Object Reference"
@@ -5444,10 +5669,162 @@ DisplayType = "ASCII String"
 %NAME = "error out"
 
 [DEF, SF.Seq[0].Main[39]]
+<<<<<<< HEAD
 %NAME = "Initialize UART DUT2"
 
 [SF.Seq[0].Main[40].TS]
 Id = "ID#:EIQYJPf88BG5g1B7nf4f8B"
+=======
+%NAME = "Initialize Advantech DI 8-15 - Port1"
+
+[SF.Seq[0].Main[40].TS]
+Id = "ID#:DVHlf5kM8RGLhMyCf698CA"
+ResultOption = 0
+
+[DEF, SF.Seq[0].Main[40].TS]
+SData = "TYPE, FlexGStepAdditions"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall]
+ProjectPath = "Grunner.lvproj"
+VIPath = "My Computer\\PCIe-1750 DIO\\DO_Relay.lvlib\\Initialize Output.vi"
+Namespace = "DO_Relay.lvlib"
+TDChecksum = -996122137
+%HI: Parms = [3]
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms]
+%[0] = "TYPE, VIParameter"
+%[1] = "TYPE, VIParameter"
+%[2] = "TYPE, VIParameter"
+%[3] = "TYPE, VIParameter"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[0]]
+Label = "Physical channels in"
+ArgVal = "\"PCI-1750,BID#0/port0\" "
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+ConnectorNumber = 11
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[0]]
+%NAME = "Physical channels in"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1]]
+Label = "error in"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+%HI: ArrayClusterEls = [2]
+ConnectorNumber = 8
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "False"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "0"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "\"\""
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[1]]
+%NAME = "error in"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[2]]
+Label = "task out"
+ArgVal = "StationGlobals.References.AdvantechDIO.DO_Port0"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+Direction = 1
+ConnectorNumber = 3
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[2]]
+%NAME = "task out"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3]]
+Label = "error out"
+ArgVal = "Step.Result.Error"
+Type = 3
+WireRequirement = 1
+DisplayType = "Container"
+%HI: ArrayClusterEls = [2]
+Direction = 1
+ConnectorNumber = 0
+LegacyClusterType = 2
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls]
+%[0] = "TYPE, VIParameterElement"
+%[1] = "TYPE, VIParameterElement"
+%[2] = "TYPE, VIParameterElement"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+Label = "status"
+ArgVal = "Step.Result.Error.Occurred"
+Type = 2
+WireRequirement = 1
+DisplayType = "Boolean"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls[0]]
+%NAME = "status"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+Label = "code"
+ArgVal = "Step.Result.Error.Code"
+Type = 0
+WireRequirement = 1
+NumType = 4
+DisplayType = "Number (I32)"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls[1]]
+%NAME = "code"
+
+[SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+Label = "source"
+ArgVal = "Step.Result.Error.Msg"
+Type = 1
+WireRequirement = 1
+DisplayType = "ASCII String"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3].ArrayClusterEls[2]]
+%NAME = "source"
+
+[DEF, SF.Seq[0].Main[40].TS.SData.ViCall.Parms[3]]
+%NAME = "error out"
+
+[DEF, SF.Seq[0].Main[40]]
+%NAME = "Initialize Advantech D0 0-7 - Port 0"
+
+[SF.Seq[0].Main[41].TS]
+Id = "ID#:ysmx/0MA8RG5h1B7nf4f8B"
+Mode = "Skip"
+>>>>>>> main
 ResultOption = 0
 
 [DEF, SF.Seq[0].Main[40].TS]
