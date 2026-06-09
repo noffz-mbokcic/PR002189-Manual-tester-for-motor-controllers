@@ -7,30 +7,6 @@
         <Name>327-LEPL-104-M-a</Name>
         <Description />
       </VariantName>
-      <VariantName>
-        <Name>327-LEPL-104-A-c</Name>
-        <Description />
-      </VariantName>
-      <VariantName>
-        <Name>327-LEPL-104-B-c</Name>
-        <Description />
-      </VariantName>
-      <VariantName>
-        <Name>327-LEPL-104-E-a</Name>
-        <Description />
-      </VariantName>
-      <VariantName>
-        <Name>327-LEPL-104-L-a</Name>
-        <Description />
-      </VariantName>
-      <VariantName>
-        <Name>327-LEPL-104-O-a</Name>
-        <Description />
-      </VariantName>
-      <VariantName>
-        <Name>327-LEPL-104-G-a</Name>
-        <Description />
-      </VariantName>
     </VariantIdentifiers>
     <SequenceFiles>
       <SequenceFile>
@@ -49,36 +25,6 @@
             <SequenceItems />
             <Description />
           </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-A-c</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-B-c</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-E-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-L-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-O-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-G-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
         </VariantItems>
       </SequenceFile>
       <SequenceFile>
@@ -96,36 +42,6 @@
             <FileGlobalValueItems />
             <SequenceItems />
             <Description />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-A-c</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-B-c</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-E-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-L-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-O-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-G-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems />
           </VariantItem>
         </VariantItems>
       </SequenceFile>
@@ -738,7 +654,7 @@
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>26</Value>
+                              <Value>21.6</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -1415,12 +1331,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>110</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>110</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -1450,12 +1366,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>327</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>327</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -1485,12 +1401,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>104</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>104</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -1520,12 +1436,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>77</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>77</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -1555,12 +1471,12 @@
                             <LimitValueItem>
                               <Name>Low</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>97</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>High</Name>
                               <ValueType>Numeric</ValueType>
-                              <Value>97</Value>
+                              <Value>0</Value>
                             </LimitValueItem>
                             <LimitValueItem>
                               <Name>Comparison Type</Name>
@@ -2209,7 +2125,7 @@
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Main</StepItemGroup>
                         <Index>38</Index>
-                        <RunMode>Skip</RunMode>
+                        <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
                           <LimitValueItems />
@@ -2221,7 +2137,7 @@
                         <StepType>SequenceCall</StepType>
                         <StepItemGroup>Main</StepItemGroup>
                         <Index>39</Index>
-                        <RunMode>Skip</RunMode>
+                        <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
                           <LimitValueItems />
@@ -4524,6 +4440,23 @@
                 </GroupItems>
               </SequenceItem>
               <SequenceItem>
+                <Name>Check potentiometer</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
                 <Name>4.1.8 Read Encoder value</Name>
                 <GroupItems>
                   <GroupItem>
@@ -4532,188 +4465,7 @@
                   </GroupItem>
                   <GroupItem>
                     <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.8 Encoder START</Name>
-                        <UniqueId>ID#:hAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Label</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4,1,8 Rotate Encoder G1 </Name>
-                        <UniqueId>ID#:hQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder G1 Reg 13 Read first value</Name>
-                        <UniqueId>ID#:hgJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>2</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>While</Name>
-                        <UniqueId>ID#:hwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_While</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>If</Name>
-                        <UniqueId>ID#:iAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_If</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder G1 Reg 13 Read and compare 1</Name>
-                        <UniqueId>ID#:iQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder G1 Reg 13 Read and compare 2</Name>
-                        <UniqueId>ID#:igJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>TestPassed</Name>
-                        <UniqueId>ID#:iwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Statement</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Else</Name>
-                        <UniqueId>ID#:jAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_Else</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>8</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Time Elapsed</Name>
-                        <UniqueId>ID#:jQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Statement</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>9</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:jgJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>10</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:jwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>11</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Repeat test?</Name>
-                        <UniqueId>ID#:kAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>12</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder G1 Reg 13 Read and compare</Name>
-                        <UniqueId>ID#:kQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>13</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder END</Name>
-                        <UniqueId>ID#:kgJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Label</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>14</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
+                    <StepItems />
                   </GroupItem>
                   <GroupItem>
                     <Name>Cleanup</Name>
@@ -4726,365 +4478,11 @@
                 <GroupItems>
                   <GroupItem>
                     <Name>Setup</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.3  Setpoint START</Name>
-                        <UniqueId>ID#:kwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Label</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Connect 5V on TP3</Name>
-                        <UniqueId>ID#:lQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Connect GND  on TP1</Name>
-                        <UniqueId>ID#:lgJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>2</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Turn On 5V on TP3</Name>
-                        <UniqueId>ID#:lAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Wait</Name>
-                        <UniqueId>ID#:lwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Wait</StepType>
-                        <StepItemGroup>Setup</StepItemGroup>
-                        <Index>4</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.3 Setpoint Reg 0</Name>
-                        <UniqueId>ID#:mAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>0</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>0</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Comparison Type</Name>
-                              <Value>GELE</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Units</Name>
-                              <Value>decimal</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Numeric Format</Name>
-                              <Value />
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>Disconnect 5V on TP3</Name>
-                        <UniqueId>ID#:mQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Disconnect GND  on TP1</Name>
-                        <UniqueId>ID#:mgJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Turn off 5V on TP3</Name>
-                        <UniqueId>ID#:mwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>2</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.3  Setpoint END</Name>
-                        <UniqueId>ID#:nAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Label</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>Check potentiometer</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
                     <StepItems />
                   </GroupItem>
                   <GroupItem>
                     <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>Potentiometer test</Name>
-                        <UniqueId>ID#:eAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Label</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Show message</Name>
-                        <UniqueId>ID#:eQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>While</Name>
-                        <UniqueId>ID#:egJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_While</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>2</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>If</Name>
-                        <UniqueId>ID#:ewJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_If</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Check potentiometer value</Name>
-                        <UniqueId>ID#:fAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>0</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>0</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Comparison Type</Name>
-                              <Value>GELE</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Units</Name>
-                              <Value>decimal</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Numeric Format</Name>
-                              <Value />
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>TestPassed</Name>
-                        <UniqueId>ID#:fQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Statement</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>5</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Else</Name>
-                        <UniqueId>ID#:fgJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_Else</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>6</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Time Elapsed</Name>
-                        <UniqueId>ID#:fwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Statement</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>7</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:gAJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>8</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>End</Name>
-                        <UniqueId>ID#:gQJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NI_Flow_End</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>9</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Repeat test?</Name>
-                        <UniqueId>ID#:ggJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>10</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Potentiometer test</Name>
-                        <UniqueId>ID#:gwJE8d1j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>11</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>0</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>0</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Comparison Type</Name>
-                              <Value>GELE</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Units</Name>
-                              <Value>decimal</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>Numeric Format</Name>
-                              <Value />
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
+                    <StepItems />
                   </GroupItem>
                   <GroupItem>
                     <Name>Cleanup</Name>
@@ -5107,46 +4505,23 @@
                   </GroupItem>
                   <GroupItem>
                     <Name>Main</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
                     <StepItems>
                       <StepItem>
-                        <Name>4.1.13 VAV sensor Reg 277</Name>
-                        <UniqueId>ID#:kmSvdt5j8RGLwMyCf698CA</UniqueId>
+                        <Name>2.1.1 Power consumption of the PCB with motor</Name>
+                        <UniqueId>ID#:UAdI0RIX8RGLo8yCf698CA</UniqueId>
                         <StepType>NumericLimitTest</StepType>
                         <StepItemGroup>Main</StepItemGroup>
-                        <Index>91</Index>
-                        <RunMode>Skip</RunMode>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
                         <LimitValueItemContainer>
                           <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.14 Temperature Sensor Reg20</Name>
-                        <UniqueId>ID#:k2Svdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>92</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>26</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
                         </LimitValueItemContainer>
                       </StepItem>
                     </StepItems>
@@ -5159,683 +4534,6 @@
               </SequenceItem>
             </SequenceItems>
             <Description />
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-A-c</Name>
-            <FileGlobalValueItems />
-            <SequenceItems>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2159</Name>
-                        <UniqueId>ID#:iT9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>65</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>65</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2160</Name>
-                        <UniqueId>ID#:ij9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>99</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>99</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.5 Potentiometer P1 Reg 11</Name>
-                        <UniqueId>ID#:N4DGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>SequenceCall</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>38</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.6 Potentiometer P2 Reg 12</Name>
-                        <UniqueId>ID#:OIDGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>SequenceCall</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>39</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder G1 Reg 13 Read and compare</Name>
-                        <UniqueId>ID#:OoDGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>41</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Skip Display test</Name>
-                        <UniqueId>ID#:O4DGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Goto</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>43</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>2.Ground/ Basic test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-            </SequenceItems>
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-B-c</Name>
-            <FileGlobalValueItems />
-            <SequenceItems>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2159</Name>
-                        <UniqueId>ID#:iT9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>66</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>66</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2160</Name>
-                        <UniqueId>ID#:ij9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>4</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>99</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>99</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.5 Potentiometer P1 Reg 11</Name>
-                        <UniqueId>ID#:N4DGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>SequenceCall</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>38</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.6 Potentiometer P2 Reg 12</Name>
-                        <UniqueId>ID#:OIDGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>SequenceCall</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>39</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.7 Feedback potentiometer Reg 8</Name>
-                        <UniqueId>ID#:OYDGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>SequenceCall</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>40</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.8 Encoder G1 Reg 13 Read and compare</Name>
-                        <UniqueId>ID#:OoDGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>PassFailTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>41</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>Skip Display test</Name>
-                        <UniqueId>ID#:O4DGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>Goto</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>43</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.13 VAV sensor Reg 277</Name>
-                        <UniqueId>ID#:kmSvdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>91</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.14 Temperature Sensor Reg20</Name>
-                        <UniqueId>ID#:k2Svdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>92</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>2.Ground/ Basic test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-            </SequenceItems>
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-E-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2159</Name>
-                        <UniqueId>ID#:iT9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>69</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>69</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.7 Feedback potentiometer Reg 8</Name>
-                        <UniqueId>ID#:OYDGB95j8RGLwMyCf698CA</UniqueId>
-                        <StepType>SequenceCall</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>40</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>2.Ground/ Basic test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>2.1.1 Power consumption of the PCB with motor</Name>
-                        <UniqueId>ID#:MjWVUpP38BG5f1B7nf4f8B</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>1</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>15</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-            </SequenceItems>
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-L-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2159</Name>
-                        <UniqueId>ID#:iT9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>76</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>76</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>2.Ground/ Basic test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-            </SequenceItems>
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-O-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.1 Communication Reg 59</Name>
-                        <UniqueId>ID#:VYXalmD48BG5gFB7nf4f8B</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>0</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>111</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>111</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2159</Name>
-                        <UniqueId>ID#:iT9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>79</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>79</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.13 VAV sensor Reg 277</Name>
-                        <UniqueId>ID#:kmSvdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>91</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.14 Temperature Sensor Reg20</Name>
-                        <UniqueId>ID#:k2Svdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>92</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>2.Ground/ Basic test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-            </SequenceItems>
-          </VariantItem>
-          <VariantItem>
-            <Name>327-LEPL-104-G-a</Name>
-            <FileGlobalValueItems />
-            <SequenceItems>
-              <SequenceItem>
-                <Name>4. Functional test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>4.1.2 PCB Identifier Reg 2159</Name>
-                        <UniqueId>ID#:iT9nINoI8RGLgMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>3</Index>
-                        <RunMode>Normal</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems>
-                            <LimitValueItem>
-                              <Name>Low</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>71</Value>
-                            </LimitValueItem>
-                            <LimitValueItem>
-                              <Name>High</Name>
-                              <ValueType>Numeric</ValueType>
-                              <Value>71</Value>
-                            </LimitValueItem>
-                          </LimitValueItems>
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.13 VAV sensor Reg 277</Name>
-                        <UniqueId>ID#:kmSvdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>91</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                      <StepItem>
-                        <Name>4.1.14 Temperature Sensor Reg20</Name>
-                        <UniqueId>ID#:k2Svdt5j8RGLwMyCf698CA</UniqueId>
-                        <StepType>NumericLimitTest</StepType>
-                        <StepItemGroup>Main</StepItemGroup>
-                        <Index>92</Index>
-                        <RunMode>Skip</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems>
-                      <StepItem>
-                        <Name>Disconnect RS485 A</Name>
-                        <UniqueId>ID#:W1n/gWD48BG5gFB7nf4f8B</UniqueId>
-                        <StepType>Action</StepType>
-                        <StepItemGroup>Cleanup</StepItemGroup>
-                        <Index>2</Index>
-                        <RunMode>Fail</RunMode>
-                        <LimitValueItemContainer>
-                          <Name>Limits</Name>
-                          <LimitValueItems />
-                        </LimitValueItemContainer>
-                      </StepItem>
-                    </StepItems>
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-              <SequenceItem>
-                <Name>2.Ground/ Basic test</Name>
-                <GroupItems>
-                  <GroupItem>
-                    <Name>Setup</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Main</Name>
-                    <StepItems />
-                  </GroupItem>
-                  <GroupItem>
-                    <Name>Cleanup</Name>
-                    <StepItems />
-                  </GroupItem>
-                </GroupItems>
-              </SequenceItem>
-            </SequenceItems>
           </VariantItem>
         </VariantItems>
       </SequenceFile>
@@ -11624,6 +10322,42 @@
                   </GroupItem>
                 </GroupItems>
               </SequenceItem>
+              <SequenceItem>
+                <Name>2.Ground/ Basic test</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>2.1.1 Power consumption of the PCB with motor</Name>
+                        <UniqueId>ID#:vc10qID78BG5gVB7nf4f8B</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>10.5</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
             </SequenceItems>
             <Description />
           </VariantItem>
@@ -11674,10 +10408,6 @@
   </AppInfo>
   <AppInfo>
     <Version>10.0.0.0</Version>
-    <LastModification>2026-06-09T19:53:51.4314722+02:00</LastModification>
-  </AppInfo>
-  <AppInfo>
-    <Version>10.2.0.0</Version>
-    <LastModification>2026-06-02T09:17:33.4846158+02:00</LastModification>
+    <LastModification>2026-06-09T11:13:19.6920701+02:00</LastModification>
   </AppInfo>
 </ProductConfiguration>
